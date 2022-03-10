@@ -6,10 +6,11 @@ class Solution(object):
         """
 
         for i, x in enumerate(nums):
-            print(nums)
             if i+1 < len(nums):
                 while x == nums[i+1]:  # if equal to next
                     nums.pop(i)
+                    if i+1 >= len(nums):
+                        break
 
         k = len(nums)
         return k
