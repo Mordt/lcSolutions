@@ -18,6 +18,7 @@ class Solution(object):
         largest = 0
         roman = iter(reversed(s))
 
+        #want to subtract numbers when following char is less than previous
         for x in roman:
             print(x)
             if numerals[str(x)] >= largest:
