@@ -1,36 +1,48 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution(object):
-    def mergeTwoLists(self, list1, list2):
-        """
-        :type list1: Optional[ListNode]
-        :type list2: Optional[ListNode]
-        :rtype: Optional[ListNode]
-        """
-        #checking edge cases lists empty
-        if list1 == None and list2 == None:
-            return None
-        if list1 == None:
-            return list2
-        if list2 == None:
-            return list1
+class ListNode:
+   def __init__(self, data, next=None):
+      self.val = data
+      self.next = next
 
-        #track current position in lists
-        retl = ListNode()
-        track1 = ListNode()
-        track2 = ListNode()
+   def make_list(elements):
+      head = ListNode(elements[0])
+      for element in elements[1:]:
+         ptr = head
+         while ptr.next:
+            ptr = ptr.next
+         ptr.next = ListNode(element)
+      return head
 
-        while retl != None:
-            if track1 == None:
-                #stuff
-            if track2 == None:
-                #stuff
 
-            if list1.value < list2.value:
-                retl = list1
-                retl.next
+def print_list(head):
+   ptr = head
+   print('[', end="")
+   while ptr:
+      print(ptr.val, end=", ")
+      ptr = ptr.next
+   print(']')
 
-            retl = retl.next
+
+class Solution:
+   def mergeTwoLists(self, l1, l2):
+      """
+      :type l1: ListNode
+      :type l2: ListNode
+      :rtype: ListNode
+      """
+      if not l1:
+         return l2
+      if not l2:
+         return l1
+      if(l1.val <= l2.val):
+         l1.next = self.mergeTwoLists(l1.next, l2)
+         return l1
+      else:
+         l2.next = self.mergeTwoLists(l1, l2.next)
+         return l2
+
+
+head1 = make_list([1, 2, 4, 7])
+head2 = make_list([1, 3, 4, 5, 6, 8])
+ob1 = Solution()
+head3 = ob1.mergeTwoLists(head1, head2)
+print_list(head3)
