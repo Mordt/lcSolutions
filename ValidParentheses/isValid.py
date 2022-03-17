@@ -5,6 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         #quick function to look at top of stack
+        #adding comments for clarity
         def peekStack(stack):
             if stack:
                 return stack[-1]
