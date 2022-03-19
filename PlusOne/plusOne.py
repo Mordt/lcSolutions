@@ -16,7 +16,7 @@ class Solution(object):
                     x = 0
                     continue
                 else:
-                    x += 1
+                    digits[index(x)-1] += 1
                     notAdded = False
 
         return digits
