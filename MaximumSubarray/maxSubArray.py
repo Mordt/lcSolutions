@@ -6,6 +6,7 @@ class Solution(object):
         """
         largest = 0
         for x in nums:
+            print(largest, x, largest+x)
             if largest + x >= largest:
                 largest += x
             else:
