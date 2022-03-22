@@ -1,0 +1,6 @@
+so I found this problem rather challenging. my first approach was to add to the digits one by one,
+ attempting to carry if anything was a 9. 
+I later realised that an easier way of doing it was converting it to a number then letting the usual
+add function do the work, then converting it back to a list.
+
+I have to remember this approach as it'll make my life easier down the track.
