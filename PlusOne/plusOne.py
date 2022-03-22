@@ -6,7 +6,6 @@ class Solution(object):
         """
         #new idea
         #convert to a number, add it then convert back to a list
-        #comments for testing, hello father
         num = 0
         for i in range(len(digits)):
             num += digits[i] * pow(10, (len(digits)-1-i))
