@@ -7,7 +7,6 @@ class Solution(object):
         """
         if needle == "":
             return 0
-
         if needle in haystack:
             return haystack.index(needle)
         else:
