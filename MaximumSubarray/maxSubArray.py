@@ -9,7 +9,9 @@ class Solution(object):
             print(largest, x, largest+x)
             if largest + x >= largest:
                 largest += x
-            else:
+            if abs(x) > largest/2:
                 largest = 0
+            #else:
+                #largest = 0
 
         return largest
