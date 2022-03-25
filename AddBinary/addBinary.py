@@ -6,10 +6,17 @@ class Solution(object):
         :rtype: str
         """
         #use bin() and int() to convert values then return
-        deca = int(a)
-        decb = int(b)
-        result = deca + decb
-        bin(result)
-        result = str(result)
+        bina = int(a, base = 2)
+        binb = int(b, base = 2)
         
-        return result.decode('ascii')       
+        result = bina + binb
+        result = bin(result)
+        print(bina, binb, result)
+        
+        result = str(result)
+        result.decode('ascii')
+        
+        
+        return result
+
+        
