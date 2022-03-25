@@ -11,12 +11,6 @@ class Solution(object):
         
         result = bina + binb
         result = bin(result)
-        print(bina, binb, result)
         
-        result = str(result)
-        result.decode('ascii')
-        
-        
-        return result
-
-        
+        result = result.replace('0b', '')
+        return result        
