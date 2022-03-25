@@ -9,5 +9,7 @@ class Solution(object):
         deca = int(a)
         decb = int(b)
         result = deca + decb
+        bin(result)
+        result = str(result)
         
-        return = bin(result)       
+        return result.decode('ascii')       
