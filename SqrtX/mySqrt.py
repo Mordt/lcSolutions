@@ -9,11 +9,23 @@ class Solution(object):
             #return int(sqrt(x))
         #idea instead search small integer space of possible answers and see
         #if num*num = x
-        integers = range(1,x)
+        
+        if x == 0:
+            return 0
+        if x == 1:
+            return 1
+        
+        integers = range(0,x)
         domain = []
         for num in integers:
             if num*num > x:
-                domain = range(1,num)
+                domain = range(0,num)
                 break
-        return domain[len(domain)-1]
+            if num*num == x:
+                domain = range(0, num)
+                break
+            domain = range(0,num)
+        print(integers)
+        return domain[len(domain)-1
 
+        
