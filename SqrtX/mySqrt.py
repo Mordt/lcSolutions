@@ -1,28 +1,11 @@
-class Solution(object):
-    def mySqrt(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
-        #what number, between 1 and x times itself is equal to x?
-        #cant do this:
-            #return int(sqrt(x))
-        #idea instead search small integer space of possible answers and see
-        #if num*num = x
+class Solution:
+    def mySqrt(self, x: int) -> int:
         if x == 0:
             return 0
-        if x == 1:
+        elif x == 1:
             return 1
-        
-        integers = range(0,x+1)
-        domain = []
-        
-        for num in integers:
-            if num*num > x:
-                domain = range(0,num)
-                break
-
-            domain = range(0,num)
-        return domain[len(domain)-1]
-
-
+        root = x / 2
+        eps = 0.00001
+        while(root - x / root > eps):
+            root = 0.5 * (root + x / root)
+        return int(root)
