@@ -11,5 +11,5 @@ class Solution(object):
         else:
             nums.insert(0, target)
             nums.sort()
-            return index(target)
+            return nums.index(target)
            
