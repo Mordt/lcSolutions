@@ -7,6 +7,9 @@ class Solution(object):
         """
         
         if target in nums:
-            return index(target)
+            return nums.index(target)
         else:
+            nums.insert(0, target)
+            nums.sort()
+            return index(target)
            
