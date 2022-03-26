@@ -1,5 +1,9 @@
-class Solution:
-    def mySqrt(self, x: int) -> int:
+class Solution(object):
+    def mySqrt(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
         if x == 0:
             return 0
         elif x == 1:
@@ -9,3 +13,4 @@ class Solution:
         while(root - x / root > eps):
             root = 0.5 * (root + x / root)
         return int(root)
+
