@@ -6,6 +6,7 @@ class Solution(object):
         """
         #dynamic programming really
         #emulates fibonacci sequence
+        #count from top to bottom to find solution
 
         one, two = 1,1
 
