@@ -7,3 +7,9 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
+        for x in nums2:
+            nums1.insert(0, x)
+        
+        nums1.sort()
+
+
