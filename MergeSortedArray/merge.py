@@ -7,9 +7,7 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        print(len(nums1))
         for i in range(-1,n):
-            print(-i, nums1[-i])
             if nums1[-i] == 0:
                 nums1.pop(-i)
         
@@ -17,4 +15,5 @@ class Solution(object):
             nums1.insert(0, x)
                 
         nums1.sort()
-
+        
+        
