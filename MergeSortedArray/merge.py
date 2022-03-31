@@ -9,6 +9,9 @@ class Solution(object):
         """
         for x in nums2:
             nums1.insert(0, x)
+            
+        while 0 in nums1:
+            nums1.remove(0)
         
         nums1.sort()
 
