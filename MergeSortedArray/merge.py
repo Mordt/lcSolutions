@@ -10,9 +10,14 @@ class Solution(object):
         for x in nums2:
             nums1.insert(0, x)
             
-        while 0 in nums1:
-            nums1.remove(0)
-        
+        #while 0 in nums1:
+        #    nums1.remove(0)
+            
+        for i in range(m,m+n):
+            if nums1[i] == 0:
+                nums1.del(i)
+                
         nums1.sort()
+
 
 
