@@ -10,18 +10,12 @@ class Solution(object):
         
         #new idea:
         #have a pointer at each array, traverse 1 by 1 at n+m
-        
-        one, two = 0, 0
-        for i in range(n+m):
-            print(i, nums1[one], nums2[two])
-            
-            if nums1[one] >= nums2[two] or i == m:
-                nums1.insert(i, nums2[two])
-                one += 1
-                two += 1
-            else:#nums1[one] < nums2[two]
-                #nums1.insert(i+1, nums2[two])#insert in current index
-                one +=1
-                #two +=1
-
+        #iterating backwards through both lists. great bit of code
+        while n:
+            if m and nums1[m - 1] >= nums2[n - 1]:
+                nums1[m + n - 1] = nums1[m - 1]
+                m -= 1
+            else:
+                nums1[m + n - 1] = nums2[n - 1]
+                n -= 1
         
