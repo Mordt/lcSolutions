@@ -7,13 +7,21 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        for i in range(-1,n):
-            if nums1[-i] == 0:
-                nums1.pop(-i)
         
-        for x in nums2:
-            nums1.insert(0, x)
-                
-        nums1.sort()
+        #new idea:
+        #have a pointer at each array, traverse 1 by 1 at n+m
         
+        one, two = 0, 0
+        for i in range(n+m):
+            print(i, nums1[one], nums2[two])
+            
+            if nums1[one] >= nums2[two] or i == m:
+                nums1.insert(i, nums2[two])
+                one += 1
+                two += 1
+            else:#nums1[one] < nums2[two]
+                #nums1.insert(i+1, nums2[two])#insert in current index
+                one +=1
+                #two +=1
+
         
