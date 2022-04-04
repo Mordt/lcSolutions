@@ -13,5 +13,5 @@ class Solution(object):
         #if currnum == lastnum, delete currnum
 
         while head != None:
-            print head.val
+            print(head.val)
             head = head.next
