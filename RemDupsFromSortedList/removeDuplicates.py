@@ -20,7 +20,7 @@ class Solution(object):
         head = head.next
 
         while head != None:
-            print head.val
+            print(head.val)
             if head.val == currNum:
                 #delete node, move on
                 head = head.next
