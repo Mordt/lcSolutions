@@ -15,12 +15,16 @@ class Solution(object):
             return head
 
         currNum = head.val
+        prev = head
         head = head.next
 
         while head != None:
             print head.val
             if head.val == currNum:
                 #delete node, move on
+                head = head.next
+                prev.next = head
             else:  # update current number, proceed
                 currNum = head.val
                 head = head.next
+                prev = prev.next
