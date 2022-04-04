@@ -14,6 +14,7 @@ class Solution(object):
         if head == None:
             return head
 
+        toReturn = head
         currNum = head.val
         prev = head
         head = head.next
@@ -28,3 +29,5 @@ class Solution(object):
                 currNum = head.val
                 head = head.next
                 prev = prev.next
+
+        return toReturn
