@@ -8,7 +8,7 @@ class Solution(object):
         #emulates fibonacci sequence
         #count from top to bottom to find solution
 
-        one, two = 1,1
+        one, two = 1, 1
 
         for i in range(n-1):
             temp = one
