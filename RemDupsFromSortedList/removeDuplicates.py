@@ -14,3 +14,4 @@ class Solution(object):
 
         while head != None:
             print head.val
+            head = head.next
