@@ -11,7 +11,16 @@ class Solution(object):
         """
         #have last num
         #if currnum == lastnum, delete currnum
+        if head == None:
+            return head
+
+        currNum = head.val
+        head = head.next
 
         while head != None:
-            print(head.val)
-            head = head.next
+            print head.val
+            if head.val == currNum:
+                #delete node, move on
+            else:  # update current number, proceed
+                currNum = head.val
+                head = head.next
