@@ -4,6 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        #urrNum = nums[0]
-        for x in nums:
-            print(x)
+        if nums = "":
+            return
+
+        crrNum = nums[0]
+
+        array = len(nums)
+        for x in array:
+            print nums[x]
