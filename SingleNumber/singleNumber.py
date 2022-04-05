@@ -7,8 +7,16 @@ class Solution(object):
         if not nums:
             return
 
-        crrNum = nums[0]
-
+        currNum = nums[0]
         array = len(nums)
-        for x in array:
-            print(nums[x])
+
+        for x in range(1, array):
+
+            if nums[x] == currNum:
+                nums.remove(nums[x])
+                continue
+            else:
+                currNum = nums[x]
+            continue
+
+            #print(currNum, nums[x])
