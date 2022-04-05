@@ -4,11 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if nums = "":
+        if not nums:
             return
 
         crrNum = nums[0]
 
         array = len(nums)
         for x in array:
-            print nums[x]
+            print(nums[x])
