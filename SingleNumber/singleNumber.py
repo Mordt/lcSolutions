@@ -10,13 +10,13 @@ class Solution(object):
         currNum = nums[0]
         array = len(nums)
 
-        for x in range(1, array):
-
+        for x in range(1, array-1):
+            print(x, array, nums)
             if nums[x] == currNum:
                 nums.remove(nums[x])
                 continue
             else:
                 currNum = nums[x]
-            continue
+                continue
 
             #print(currNum, nums[x])
