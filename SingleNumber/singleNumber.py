@@ -16,4 +16,4 @@ class Solution(object):
             if nums[x] == currNum:
                 continue
             else:
-                return = nums[x]
+                return nums[x]
