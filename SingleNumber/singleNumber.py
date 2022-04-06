@@ -7,15 +7,13 @@ class Solution(object):
         if not nums:
             return
 
+        #new approach, find solo num
         currNum = nums[0]
         array = len(nums)
 
         for x in range(1, array):
-            print(x, nums)
+            print(x)
             if nums[x] == currNum:
                 continue
             else:
-                currNum = nums[x]
-                continue
-
-            #print(currNum, nums[x])
+                return = nums[x]
