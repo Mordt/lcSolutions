@@ -8,12 +8,13 @@ class Solution(object):
             return
 
         #new approach, find solo num
+        #check left and right
         currNum = nums[0]
         array = len(nums)
 
         for x in range(1, array):
-            print(x)
             if nums[x] == currNum:
                 continue
             else:
+                currNum = nums[x]
                 return nums[x]
