@@ -52,3 +52,14 @@ setting stage
     consider questions you would like to ask 
         (intiatives/projects, team culture, scope of role)
     reach out if have questions
+
+responding to questions
+    start with the customer. include customer (internal or external),
+        in situation. work backwards from the customer.
+    use multiple examples. do not repeat stories or examples
+    when sharing examples, be specific and provide details and data.
+    I before we. focus on what YOU owned, what YOU did.
+    show how you deal with ambiguity. break questions down, navigate
+        intentionally vague requirements. change strategies quickly if approach doesnt work,
+        work through open ended questions.
+    leverage notes, use them but don't be 100% reliant on them.
