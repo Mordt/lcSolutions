@@ -1,4 +1,24 @@
+Email notes
+    will involve live coding and behavioural questions.
+    REVIEW interview prep - SDE
+    consider postponing interview for more preparation
+
 Greenfield Initative
-will involve live coding and behavioural questions.
-REVIEW interview prep - SDE
-consider postponing interview for more preparation
+    team in bris, sydney and melbourne
+    visa sponsorship provided
+
+    personalities required:
+        high motivation to deliver results
+        analyticaal acumen and a passion for solving problems
+        ability to make decisions in the face of ambiguity
+        desire to experiment, innovate and learn from everything
+        good comm skills, ability to work independently everywhere
+        enjoyment for working as a team as well as a strong sense of ownership and personal achievement
+
+    what will you do 
+        work on back end services that can scale to millions of requests
+        tackle some intriguing problems in software architecture 
+        define scalability testing and scalability improvements for websites while developing
+            new features
+        build products that will reach millions
+        
