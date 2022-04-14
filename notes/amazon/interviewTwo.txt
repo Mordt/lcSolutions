@@ -21,3 +21,25 @@ Greenfield Initative
         define scalability testing and scalability improvements for websites while developing
             new features
         build products that will reach millions
+
+Interview Prep SDE
+    will meet 4 or 5 devs, each convo will be 60 mins long
+    review amazon leadership principles!!
+        learn and be curious!!
+        Own your projects!
+        ask the right questions!!
+
+    Each interviewer will ask about technical skills:
+        system design competency
+            working knowledge of a few comon and useful design patterns,
+            as well as knowledge of how to write software in object-oriented way
+            Expect to apply concepts to a particlular problem and defend 
+            your design choices.
+
+        three coding competencies
+            show off knowledge of fundamentals (hash maps, arrays, binary trees,
+            algorithms.)
+            evaluation will cover data structures and algorithms, logical and maintainable
+            and problem solving.
+
+            consider all 3 as an integrated approach.
