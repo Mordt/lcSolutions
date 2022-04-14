@@ -21,4 +21,3 @@ Greenfield Initative
         define scalability testing and scalability improvements for websites while developing
             new features
         build products that will reach millions
-        
