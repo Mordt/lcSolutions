@@ -87,4 +87,21 @@ what to expect
     will ask probing and follow-up questions
     will answer questions about working at amazon
 
+system design
+    be able to explain how your solution solves a problem
+
+    good design is critical to good code.
+    use oop best practices. think and talk about software components, distributed systems and system trade-offs
+    even more important at amazon because of scale.
+
+    what does system design competency assess?
+      measures your ability to black box design a software system (?)
+      goal is for you to deliver a design in production with considerations of deployment, scaling failures, availability, and performance. be prepared to discuss latency and concurrency.
+
+    topics to review:
+      software systems need software components, something to store data, something to make decisions (business logic) and APIs or processes.
+      knowledge of distributed systems, SOA, and n-tiered software architecture is very important in answering system design questions.
+
+      practice drawing the system.
+
 
