@@ -67,3 +67,13 @@ responding to questions
 Interview apps
     amazon chime: have it ready. download to desktop.
     get used to virtual whiteboarding.
+
+Get to know the interviewers
+hiring manager
+    typically a software development manager who would directly manage you or similar.
+    their role will be to make the best hiring decision for amazon.
+    will consider how your skills and experience compare to the objective standards for SDE success at amazon.
+
+    tip:
+      the hiring manager can answer questions about the type of work youd do in the role, the future vision of the team and noteworthy accomplishments by the team.
+      great person to ask about what it takes to be successful at aazon.
