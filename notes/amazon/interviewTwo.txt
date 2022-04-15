@@ -117,3 +117,12 @@ how to best showcase system design
     see the interviewer as the customer, requirements might be intentionally vague, and they can give you clarifications.
 
     write/raise the requirements or assumptions you are making, and base your design on them. draw a diagram
+
+other important system design considerations
+    scaling is a critical component of software design 
+      research scaling when designing your system, research scalablity concepts and tchnology prior to your interview such as caching, load balancing, non-relational databases, micro services and sharding.
+
+    fault tolerance translates to the customer obsession leadership principle
+      amazon ensures that even when dependencies are failing theyre doing their best to continue to serve customers. frugal redundancy is important.
+
+
