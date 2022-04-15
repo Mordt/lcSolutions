@@ -77,3 +77,8 @@ hiring manager
     tip:
       the hiring manager can answer questions about the type of work youd do in the role, the future vision of the team and noteworthy accomplishments by the team.
       great person to ask about what it takes to be successful at aazon.
+
+Bar raisers
+  objective third parties who act as advisors
+
+
