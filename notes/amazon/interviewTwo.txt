@@ -104,4 +104,16 @@ system design
 
       practice drawing the system.
 
+how to best showcase system design
+    your interviewer is there to help with questions and that.
+    as a designer, you should start with the primary customer and work backwards:
+      who are you designing the system for and why
+      what expectations do they have in terms of functionality
+      what things would a customer assume will be in the system but they may not think about it in the front of their minds? (i.e. it will be fast and secure)
+      what happends if we become hyper popular with customers? what will 2x growth look like? or 10x? how would that influence the design?
 
+    understand first what problem your system is supposed to solve. ask clarifying questions if this is ot clear
+
+    see the interviewer as the customer, requirements might be intentionally vague, and they can give you clarifications.
+
+    write/raise the requirements or assumptions you are making, and base your design on them. draw a diagram
