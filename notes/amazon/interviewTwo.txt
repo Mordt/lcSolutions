@@ -126,3 +126,9 @@ other important system design considerations
       amazon ensures that even when dependencies are failing theyre doing their best to continue to serve customers. frugal redundancy is important.
 
 
+Transcript
+    suggests logging of cpu and memory util for processes for tracking
+    interviewer asks for some clarity regarding issues/failure response
+
+
+
