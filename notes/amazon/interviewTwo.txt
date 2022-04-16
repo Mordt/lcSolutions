@@ -136,5 +136,9 @@ strength is good because:
     thinks about how to monitor for performance and catch potential problems
     considers resiliency and making things easier for operators
 
+logical and maintainable
+    interview explores how you structure your methods and classes to ensure the logical separation of concerns is clear. 
+    explores how you name varuables, methods and classes in a way that is readable and logical.
 
+    test names should describe business and technical requirements, and the test code should be consistent with the test names.
 
