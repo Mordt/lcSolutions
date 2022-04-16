@@ -130,5 +130,11 @@ Transcript
     suggests logging of cpu and memory util for processes for tracking
     interviewer asks for some clarity regarding issues/failure response
 
+strength is good because:
+    see strength criteria such as designs for operational performance, plans for failure and measures results.
+    considers both technical and business metrics, as well as data quality
+    thinks about how to monitor for performance and catch potential problems
+    considers resiliency and making things easier for operators
+
 
 
