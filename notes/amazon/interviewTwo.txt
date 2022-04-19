@@ -142,3 +142,5 @@ logical and maintainable
 
     test names should describe business and technical requirements, and the test code should be consistent with the test names.
 
+Logical and maintainable
+    explores how you structure your methods and classes. explores how you name variables, methods and classes in a way that future devs can understand it.
