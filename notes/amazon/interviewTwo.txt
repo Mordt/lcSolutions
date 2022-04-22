@@ -142,3 +142,11 @@ logical and maintainable
 
     test names should describe business and technical requirements, and the test code should be consistent with the test names.
 
+    what is assessed
+        measures your ability to write maintainable, readable, reusable and understandable code.
+
+    how to best prepare?
+        be technical, get as technical as possible with answers
+        be ready to write code in realtime during the interviewbe prepared to gather requirements and translate them into clean
+            written code, checking edge classes
+        no pseudo code
