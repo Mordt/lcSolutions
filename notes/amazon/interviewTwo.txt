@@ -231,5 +231,9 @@ Data Structures and Algorithms
             there is always more than one way to solve a problem. if you identify other solutions, explain why you chose yours.
             be prepared to talk about your understanding of the data structures you choose and answer questions about how they work in detail.
                 do you know multiple ways of resolving ocllisions in hash maps? why is heap insertion O(log n)? etc.
-
+        runtime and space tradeoffs
+            demonstrate a solid grasp of runtime and space complexity tradeoffs
+            if the interviewer asks you a real-world problem, abstract and think through all relevant data structures that could be used.
+            before finalising a solution, clarify problem constraints and consider multiple ways foward, before recommending one and going forward with it.
+            
         
