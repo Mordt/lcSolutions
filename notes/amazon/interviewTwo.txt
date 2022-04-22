@@ -211,3 +211,13 @@ Data Structures and Algorithms
             binary search tree data
             scalability methods - redundancy, partitioning, caching, indexing, load balancing and queues.
                 this can improve the design of the system
+    
+    how to showcase
+        optimisation
+            use optimal structures and algos to solve a problem
+            build a toolbox of what data structures would be useful in common scenarios such as efficient access 
+                by key/object/position, maintaining sort order, searching, and finding max/mins.
+            think about edge cases with chosen data structure.
+            be familiar with features in your programming language of choice. expand your toolbox.
+            if you are comparing two data structures or algorithms that each have some drawback, pick one and justify it.
+                remember to explain the benefit, operations and time complexity.
