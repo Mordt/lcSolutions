@@ -226,3 +226,10 @@ Data Structures and Algorithms
             clarify any shortcomings/issues you can expect in your solution.
                 if you know of a better DS but are not confident in using it, make sure to mention it and discuss with youri intervieweer.
             try to identify the pattern for a given problem, but keep it simple.
+        justification
+            justify your decisions
+            there is always more than one way to solve a problem. if you identify other solutions, explain why you chose yours.
+            be prepared to talk about your understanding of the data structures you choose and answer questions about how they work in detail.
+                do you know multiple ways of resolving ocllisions in hash maps? why is heap insertion O(log n)? etc.
+
+        
