@@ -221,3 +221,8 @@ Data Structures and Algorithms
             be familiar with features in your programming language of choice. expand your toolbox.
             if you are comparing two data structures or algorithms that each have some drawback, pick one and justify it.
                 remember to explain the benefit, operations and time complexity.
+        identify shortcomings
+            identify shortcomings and tradeoffs with different ds and algos
+            clarify any shortcomings/issues you can expect in your solution.
+                if you know of a better DS but are not confident in using it, make sure to mention it and discuss with youri intervieweer.
+            try to identify the pattern for a given problem, but keep it simple.
