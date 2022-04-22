@@ -273,3 +273,7 @@ Problem solving competency
             clarify the problem with questions
             make sure you understand the problem before coding
             test ideas with exampels and callout assumptions you make.
+        consider additional factors
+            dev effort, team comp, etc, beyoind the basic problem.
+            have best practice for programming
+        require minimal hints
