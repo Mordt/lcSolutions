@@ -177,3 +177,15 @@ logical and maintainable
         use descriptive variable and method names
         if you need a method call but forget its exact name or arguments, call out and ask if you can make up a 
             name and arguments.
+    working code
+        create code that works as intended
+        start small, solve one thing at a time and test for correctness as you go
+        iterate over your solution as you ask questions or the interview follows up.
+        if you can see clear design patterns or abstractions that can be applied from the beginning, use them!
+        it's better to realise code can be refactored to support more requirements in a maintainable way,
+            rather than building a complex solution that doesn't solve the requirements.
+        think through test cases, edge cases, boundary conditions, nill/nil/none etc.
+        try to enumerate these cases before coding so that when you have a solution, you can use these as validation.
+        be sure to also confirm test cases with your interviewer.
+
+        
