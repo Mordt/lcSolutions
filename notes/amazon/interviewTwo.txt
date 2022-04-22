@@ -150,3 +150,18 @@ logical and maintainable
         be ready to write code in realtime during the interviewbe prepared to gather requirements and translate them into clean
             written code, checking edge classes
         no pseudo code
+
+    how to best showcase logical and maintainable
+    
+    simple code:
+        leverage reuse, properly format, proper coding constructs
+        write out examples of how code will be used. think of ways to simplify if possible
+        start with simplest solution then enhance as you go
+        consider extendibility, make sure you will be able to extend the code when/if requirements change, 
+            avoid a single function that does everything.
+    maintainable code  
+        quickly able to trace impact of changes, clear variable naming conventions
+        make sure that your method, parameter and variable names are clear and descriptive.
+        separate functionality into discrete methods/functions with clear responsibilities.
+        consider that they will likely operate software longer than it took to write it, so the clearer things are, the better.
+        
