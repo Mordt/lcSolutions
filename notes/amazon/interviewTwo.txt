@@ -188,4 +188,26 @@ logical and maintainable
         try to enumerate these cases before coding so that when you have a solution, you can use these as validation.
         be sure to also confirm test cases with your interviewer.
 
+Data Structures and Algorithms
+    overview
+        interviewer will ask you to solve a ds and algo problem.
+        your job is to write code with an appropriate data structure to solve the problem.
+        will be asked to compare various approaches and justify your decision.
+
+        assesses your ability to choose the most efficient runtime solutions. e.g. some structures are 
+            more perfomrant for reading data while others are better for writing.
+        algorithms should be as fast as possible an solve the problem correctly. remember edge cases.
+
+        how to prepare:
+            consider runtimes for common operations and understand how they use memory.
+            understand structures you see in core libraries.
+            understand common algos:
+                traversals
+                divide and conquer (binary search)
+                bfs vs dfs vs recursion.
+            discuss runtimes, theoretical limitations and basic implementations for different cases.
         
+        suggested areas of refresh:
+            binary search tree data
+            scalability methods - redundancy, partitioning, caching, indexing, load balancing and queues.
+                this can improve the design of the system
