@@ -263,4 +263,9 @@ Problem solving competency
     how to showcase
         correctly solve the problem
             consider edge cases and inputs that break your code.
-        
+        justify decisions
+            justify decisions by identifying potential tradeoffs with several different solutions.
+                understand why one solution is better than another
+            get at leat one working solution, then work from there.
+            explain your approach before coding, vocalise thought process.
+            when vocalising points, write different inputs. do the whole shebang.
