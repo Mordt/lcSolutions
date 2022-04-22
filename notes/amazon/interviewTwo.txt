@@ -164,4 +164,8 @@ logical and maintainable
         make sure that your method, parameter and variable names are clear and descriptive.
         separate functionality into discrete methods/functions with clear responsibilities.
         consider that they will likely operate software longer than it took to write it, so the clearer things are, the better.
-        
+        code shouyld be reasonably easy to maintain as traffic or load increases.
+    organisable code
+        organise code in a way that is easy to read and understand
+        use functions, classes and inheritance to break up solution into logical components.
+        this improves readability and makes it easier to extend the solution later.
