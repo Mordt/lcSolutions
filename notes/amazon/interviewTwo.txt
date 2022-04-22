@@ -277,3 +277,6 @@ Problem solving competency
             dev effort, team comp, etc, beyoind the basic problem.
             have best practice for programming
         require minimal hints
+            identify test cases, test your code
+            dont be afraid to ask for help but ask good, directed questions
+            no trick questions or trick hints. write hints down.
