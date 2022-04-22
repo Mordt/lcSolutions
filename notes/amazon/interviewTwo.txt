@@ -261,3 +261,6 @@ Problem solving competency
                 keep it simple.
     
     how to showcase
+        correctly solve the problem
+            consider edge cases and inputs that break your code.
+        
