@@ -235,5 +235,29 @@ Data Structures and Algorithms
             demonstrate a solid grasp of runtime and space complexity tradeoffs
             if the interviewer asks you a real-world problem, abstract and think through all relevant data structures that could be used.
             before finalising a solution, clarify problem constraints and consider multiple ways foward, before recommending one and going forward with it.
-            
-        
+
+Problem solving competency
+    overview
+        ambiguous problems will be presented, understand how much time you have and split time into 3 tasks:
+            uncovering requirements and considering the evolution of the situation
+            implementing a first pass of the design and covering all requirements
+            enhancing the solution, and when satisfied, seek out more requirements to show how your solution evolves when requirements change.
+        what's assessed?
+            checks your ability to take something complex, break it down, identify a solution and translate it into working code.
+            make sure you ask clarifying questions to understand how you can start to solve the problem.
+        how to prepare
+            understand the problem and implications before jumping into code.
+            test ideas with examples and callout any assumptions you're making. ask the interviewer if they agree
+
+            suggested areas of refresh:
+                practice solving problems without an IDE. make sure you have correct syntax and that so you can focus on a solution instead of the basics.
+                demonstrate how you deal with ambiguity. demonstrate how you:
+                    handle intentionally vague requirementschange strategies when an approach doesn't work
+                    work through open-ended questions
+                    be adaptable and quick learning
+                
+                think out loud. whiteboarding challenges are an opportunity to show off problem solving skills.
+                    practice talking to yourself as you work through your process to solve a problem.
+                keep it simple.
+    
+    how to showcase
