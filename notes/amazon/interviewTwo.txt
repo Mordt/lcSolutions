@@ -322,4 +322,14 @@ leadership principles
             describe the actions you took to address the situation with an appropriate amount of detail,
             keep the focus on you. what steps did you take? how did you contribute? use "I" not "we".
         Result
-            
+            describe the outcomes of your acrtions and don't be shy about taking credit for your behaviour.
+            should be able to answer what happened? how did you measure success? what results did you achieve? what tradeoffs were made? what did you learn or would you have done differently?
+            metrics:
+              cost saving
+              quantify to udnerstand volume, size, scale
+              percentage change
+              time to market, time savings
+              impact to customer and team
+              quality improvements
+
+
