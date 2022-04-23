@@ -315,4 +315,7 @@ leadership principles
         Situation
             provide context and background for the situation.
             be specific, from a previous job, project or whatever.
+        Task
+            describe the task you were working towards.
+            include quantitative and qualitative goals.
 
