@@ -318,4 +318,8 @@ leadership principles
         Task
             describe the task you were working towards.
             include quantitative and qualitative goals.
-
+        Action
+            describe the actions you took to address the situation with an appropriate amount of detail,
+            keep the focus on you. what steps did you take? how did you contribute? use "I" not "we".
+        Result
+            
