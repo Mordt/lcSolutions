@@ -332,4 +332,7 @@ leadership principles
               impact to customer and team
               quality improvements
 
-
+Showcasing principles
+    the examples shown demonstrate clear and specific situations that exemplify the star system.
+    there is an emphasis on ownership, learning and technical details.
+    
