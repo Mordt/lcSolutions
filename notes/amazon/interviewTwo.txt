@@ -347,3 +347,5 @@ Showcasing principles
 Conclusion
     important to take system design and coding seriously
     also key to remember several stories according to the amazon leadership principles.
+    data structures and algos important. know when to use a data structure and why
+    make sure code is maintainable and has consideration for future use
