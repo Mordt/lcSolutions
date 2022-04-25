@@ -351,3 +351,5 @@ Conclusion
         remember runtime, time and space complexity
     make sure code is maintainable and has consideration for future use
     get used to whiteboarding and thinking out a problem before committing to it
+
+and that's it. :) good luck Future Carlos.
