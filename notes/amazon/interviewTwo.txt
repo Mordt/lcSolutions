@@ -348,4 +348,6 @@ Conclusion
     important to take system design and coding seriously
     also key to remember several stories according to the amazon leadership principles.
     data structures and algos important. know when to use a data structure and why
+        remember runtime, time and space complexity
     make sure code is maintainable and has consideration for future use
+    get used to whiteboarding and thinking out a problem before committing to it
