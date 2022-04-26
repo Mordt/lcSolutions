@@ -22,8 +22,11 @@ class Solution(object):
         for x in nums:
             for y in nums:
                 if target-x == y:
-                    toReturn.insert(0, nums.index(x))
-                    toReturn.insert(1, nums.index(y))
-                    break
+                    if y == x:
+                        continue
+                    else:
+                        toReturn.insert(0, nums.index(x))
+                        toReturn.insert(1, nums.index(y))
+                        break
             break
         return toReturn
