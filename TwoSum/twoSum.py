@@ -21,12 +21,12 @@ class Solution(object):
         toReturn = []
         for x in nums:
             for y in nums:
+                if y == x:
+                    #print(y)
+                    continue
                 if target-x == y:
-                    if y == x:
-                        continue
-                    else:
-                        toReturn.insert(0, nums.index(x))
-                        toReturn.insert(1, nums.index(y))
-                        break
+                    toReturn.insert(0, nums.index(x))
+                    toReturn.insert(1, nums.index(y))
+                    break
             break
         return toReturn
