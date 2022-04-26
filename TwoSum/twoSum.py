@@ -15,7 +15,13 @@ class Solution(object):
         what can we do instead? these are the data structures available to us:
             hashmaps is my first guess because of the complexity of everything
             perhaps sorting the nums list first might work.
+            
+        we will start with the brute force solution.
         """
-
+        toReturn = []
         for x in nums:
-            print(x)
+            for y in nums:
+                if target-x == y:
+                    toReturn.insert(nums.index(x))
+                    toReturn.insert(nums.index(y))
+                    return toReturn
