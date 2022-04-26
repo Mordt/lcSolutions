@@ -24,4 +24,6 @@ class Solution(object):
                 if target-x == y:
                     toReturn.insert(0, nums.index(x))
                     toReturn.insert(1, nums.index(y))
-                    return toReturn
+                    break
+            break
+        return toReturn
