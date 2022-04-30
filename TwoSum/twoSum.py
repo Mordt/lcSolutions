@@ -33,4 +33,9 @@ class Solution(object):
 
             could add every value to map before iterating. but we can check the difference straight away.
             add to hashmap after visiting
+
+            guaranteed that once we visit the second element in the array,
+            we are guaranteed the first value is already in the hashmap.
+            which is why one pass works. leaves time complexity of O(n)
+            memory complexity from hashmap is also O(n) as we have to potentially add every value.
         """
