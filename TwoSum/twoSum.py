@@ -30,5 +30,7 @@ class Solution(object):
                 so we can instantly check if the value 3 exists.
                 
             in hashmap, map value of array to index.
-            
+
+            could add every value to map before iterating. but we can check the difference straight away.
+            add to hashmap after visiting
         """
