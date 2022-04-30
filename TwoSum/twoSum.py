@@ -34,10 +34,10 @@ class Solution(object):
         """
         #now the optimal solution
 
-        hashset = set()
+        prevMap = {}  # val -> index
 
-        for n in nums:
-            if n in hashset:
-                return True
-            hashset.add(n)
-        return False
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
