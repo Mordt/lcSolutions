@@ -9,7 +9,7 @@ class Solution(object):
         prevMap = {}  # val -> index
 
         #iterate through nums array, record difference
-        #if in hashmap, return indexes
+        #if already in hashmap, return indexes
         #otherwise, map a new value into the hashmap
         for i, n in enumerate(nums):
             diff = target - n
