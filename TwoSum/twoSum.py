@@ -5,7 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        #Day 2
+
         #discussion:
         """
         obvious first solution is to brute force the thing, checking each element
@@ -17,14 +17,27 @@ class Solution(object):
             perhaps sorting the nums list first might work.
             
         we will start with the brute force solution.
-        """
+        
         toReturn = []
         for x in nums:
             for y in nums:
-                if y == x:
+                #print(nums.index(y), nums.index(x))
+                if nums.index(y) == nums.index(x):
+                    
                     continue
-                if target-x == y:
+                elif target-x == y:  
+                    print("checck")
                     toReturn.insert(0, nums.index(x))
                     toReturn.insert(1, nums.index(y))
                     
                     return toReturn
+        """
+        #now the optimal solution
+
+        hashset = set()
+
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
