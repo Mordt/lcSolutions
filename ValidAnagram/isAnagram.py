@@ -5,10 +5,6 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-
-        if len(s) != len(t):
-            return False
-
         """
         Notes from vid explanation:
         
@@ -17,7 +13,9 @@ class Solution(object):
         
         make hashmap of characters -> num of occurences?
         """
-        #attempt:
+        if len(s) != len(t):
+            return False
+
         smap = {}  # characters -> num of occurences
         tmap = {}
 
