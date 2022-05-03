@@ -8,15 +8,6 @@ class Solution(object):
 
         if len(s) != len(t):
             return False
-        #the below works in every case where there are no repeated letters
-        """
-        for x in s:
-            if x not in t:
-                return False
-            
-        #should be at the end of both strings
-        return True
-        """
 
         """
         Notes from vid explanation:
@@ -39,7 +30,7 @@ class Solution(object):
 
             if y not in tmap:
                 tmap[y] = 1
-            elif y in smap:
+            elif y in tmap:
                 tmap[y] += 1
 
         # both maps should now be populated with values
