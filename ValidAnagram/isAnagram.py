@@ -10,8 +10,8 @@ class Solution(object):
         #use hashmap? trying to compare if every letter in string s exists in t
         #map every letter to every other letter?
 
-        for i, x in enumerate(s):
-            if x not in t[i]:
+        for x in s:
+            if x not in t:
                 return False
 
         #should be at the end of both strings
