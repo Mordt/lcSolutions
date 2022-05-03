@@ -13,10 +13,10 @@ class Solution(object):
         return False
         """
         #new solution
-        dupMap = {}  # value -> count
+        dupMap = set()  # value -> count
 
         for x in nums:
             if x not in dupMap:
-                dupMap[x] = 1
+                dupMap.add(x)
             else:
                 return True
