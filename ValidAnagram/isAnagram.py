@@ -5,8 +5,8 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        #if s.length() != t.length():
-        #    return false
+        if len(s) != len(t):
+            return false
         #use hashmap? trying to compare if every letter in string s exists in t
 
         for x in enumerate(s):
