@@ -53,3 +53,12 @@ class Solution(object):
                 return False
         return True
         """
+
+        """
+        O(n) solution in terms of space
+        sort the strings, add comparison
+        cost is time complexity, nlogn time for a good sorting algorithm
+        so sort both strings, compare. if equal, return true. else, return false.
+
+        return sorted(s) == sorted(t)
+        """
