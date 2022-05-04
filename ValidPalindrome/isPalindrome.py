@@ -10,6 +10,11 @@ class Solution(object):
         # step two is to take that string and compare it to its reversal and see if theyre equal
         # if so, is palindrome. return true
 
+        newStr = ""
+
         for x in s:
             if x.isalnum():
-                print(x.lower())
+                newStr += x.lower()
+
+        #syntax to reverse a string python: string[::-1]
+        return newStr == newStr[::-1]
