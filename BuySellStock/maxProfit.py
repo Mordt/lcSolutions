@@ -12,11 +12,5 @@ class Solution(object):
         return that difference
         """
 
-        buy = min(prices)
-        bday = min(prices).index()
-
-        sell = max(prices)
-        sday = min(prices).index()
-
-        print(buy, sell)
-        print(bday, sday)
+        for i, x in enumerate(prices):
+            print(i, x)
