@@ -11,5 +11,5 @@ class Solution(object):
         # if so, is palindrome. return true
 
         for x in s:
-            if x != ' ':
-                print(x)
+            if x.isalnum():
+                print(x.lower())
