@@ -27,3 +27,12 @@ class Solution(object):
         rightPtr = s[len(s)-1]
         for i, x in enumerate(s):
             if
+
+        """
+        helper function to check if a value is alphanumeric
+        def alphaNum(self,c ):
+            return (ord('A') <= ord(c) <= ord('Z') or
+                    ord('a') <= ord(c) <= ord('z') or
+                    ord('0') <= ord(c) <= ord('9'))
+            
+        """
