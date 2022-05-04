@@ -10,6 +10,9 @@ class Solution(object):
         # step two is to take that string and compare it to its reversal and see if theyre equal
         # if so, is palindrome. return true
 
+        #new string solution:
+        #problem is that there is an isalnum() library function, plus wasted memory
+        #with the creation of two new strings (newStr and reversed newStr)
         newStr = ""
 
         for x in s:
