@@ -7,6 +7,9 @@ class Solution(object):
         #two pointers type question
         # one pointer at each end, iterate thru and compare if equal
         # step one is to get rid of capitals and remove non alphanumerics
+        # step two is to take that string and compare it to its reversal and see if theyre equal
+        # if so, is palindrome. return true
 
         for x in s:
-            print(x)
+            if x != ' ':
+                print(x)
