@@ -13,11 +13,17 @@ class Solution(object):
         #new string solution:
         #problem is that there is an isalnum() library function, plus wasted memory
         #with the creation of two new strings (newStr and reversed newStr)
-        newStr = ""
-
+        """newStr = ""
+        
         for x in s:
             if x.isalnum():
                 newStr += x.lower()
-
+                
         #syntax to reverse a string python: string[::-1]
-        return newStr == newStr[::-1]
+        return newStr == newStr[::-1]"""
+
+        #two pointer attempt:
+        leftPtr = s[0]
+        rightPtr = s[len(s)-1]
+        for i, x in enumerate(s):
+            if
