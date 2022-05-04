@@ -12,5 +12,16 @@ class Solution(object):
         return that difference
         """
 
+        buy = 0
+        sell = 0
+
+        bindex = 0
+        sindex = 0
+
         for i, x in enumerate(prices):
-            print(i, x)
+            if x < buy:
+                buy = x
+                bindex = i
+            if x > sell:
+                sell = x
+                sindex = i
