@@ -11,3 +11,12 @@ class Solution(object):
         if highest val is before lowest, discard and search for next highest
         return that difference
         """
+
+        buy = min(prices)
+        bday = min(prices).index()
+
+        sell = max(prices)
+        sday = min(prices).index()
+
+        print(buy, sell)
+        print(bday, sday)
