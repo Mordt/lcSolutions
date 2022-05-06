@@ -34,3 +34,6 @@ class Solution(object):
         #new approach, have two pointers adjacent to each other, if left < right, increment right only
         #otherwise increment both
         #when best is reched, return difference
+
+        #neetcode:
+        #calculate profit every time, wanna keep it positive
