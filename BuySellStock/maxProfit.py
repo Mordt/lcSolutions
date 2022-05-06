@@ -18,7 +18,7 @@ class Solution(object):
         s = 1
 
         for i, x in enumerate(prices):
-            if prices[s] < prices[b]:  # buy is 7 and sell is 1, for example
+            if prices[b] < prices[s]:  # buy is 7 and sell is 1, for example
                 b += 1
                 s += 1
                 buy = prices[b]
@@ -26,10 +26,11 @@ class Solution(object):
             else:
                 if x < buy:
                     buy = x
+
                 if x > sell:
                     sell = x
-                s++
-                b++
+                s += 1
+                b += 1
         #new approach, have two pointers adjacent to each other, if left < right, increment right only
         #otherwise increment both
         #when best is reched, return difference
