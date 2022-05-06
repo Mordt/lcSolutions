@@ -24,7 +24,8 @@ class Solution(object):
         #once at end, return max profit value
         #mem is O(1), time is O(n)
 
-        buy = 0, sell = 1
+        buy = 0
+        sell = 1
         maxProfit = 0
 
         while buy < len(prices):
@@ -37,3 +38,5 @@ class Solution(object):
             else:
                 buy += 1
                 sell += 1
+
+        return maxProfit
