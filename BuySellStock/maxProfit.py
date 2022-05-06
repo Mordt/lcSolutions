@@ -11,26 +11,6 @@ class Solution(object):
         if highest val is before lowest, discard and search for next highest
         return that difference
         """
-        buy = 0
-        sell = 0
-
-        b = 0
-        s = 1
-
-        for i, x in enumerate(prices):
-            if prices[b] < prices[s]:  # buy is 7 and sell is 1, for example
-                b += 1
-                s += 1
-                buy = prices[b]
-                sell = prices[s]
-            else:
-                if x < buy:
-                    buy = x
-
-                if x > sell:
-                    sell = x
-                s += 1
-                b += 1
         #new approach, have two pointers adjacent to each other, if left < right, increment right only
         #otherwise increment both
         #when best is reched, return difference
@@ -39,8 +19,8 @@ class Solution(object):
         #calculate profit every time, wanna keep it positive
         #if right is less than left, update pointers to the right
         #if right val is greater than left, record profit, record max if bigger than curr max
-            #leave left ptr, only update right pointer
-            #keep iterating till the max is bigger
+        #leave left ptr, only update right pointer
+        #keep iterating till the max is bigger
         #once at end, return max profit value
         #mem is O(1), time is O(n)
 
@@ -54,6 +34,6 @@ class Solution(object):
                 if profit > maxProfit:
                     maxProfit = profit
                 sell += 1
-            else
-            buy += 1
-            sell += 1
+            else:
+                buy += 1
+                sell += 1
