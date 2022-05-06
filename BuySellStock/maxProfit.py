@@ -37,3 +37,8 @@ class Solution(object):
 
         #neetcode:
         #calculate profit every time, wanna keep it positive
+        #if right is less than left, update pointers to the right
+        #if right val is greater than left, record profit, record max if bigger than curr max
+            #leave left ptr, only update right pointer
+            #keep iterating till the max is bigger
+        #once at end, return max profit value
