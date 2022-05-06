@@ -42,3 +42,18 @@ class Solution(object):
             #leave left ptr, only update right pointer
             #keep iterating till the max is bigger
         #once at end, return max profit value
+        #mem is O(1), time is O(n)
+
+        buy = 0, sell = 1
+        maxProfit = 0
+
+        while buy < len(prices):
+            #isprofitable?
+            if buy < sell:
+                profit = sell - buy
+                if profit > maxProfit:
+                    maxProfit = profit
+                sell += 1
+            else
+            buy += 1
+            sell += 1
