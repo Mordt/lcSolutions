@@ -31,3 +31,7 @@ class Solution(object):
             return True
         else:
             return False
+
+    #this was my own solution, however it seems as though neetcodes is similar just with a hashmap
+    #easier to check the stack tbh
+    #neetcode below
