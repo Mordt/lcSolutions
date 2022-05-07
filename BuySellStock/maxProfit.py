@@ -30,12 +30,12 @@ class Solution(object):
 
         while sell < len(prices):
             #isprofitable?
-            if prices[buy] < prices[sell]:
+            if prices[buy] < prices[sell]:#ensuring the price we're looking at makes sense
                 profit = prices[sell] - prices[buy]
-                if profit > maxProfit:
+                if profit > maxProfit:#obviously take max profit
                     maxProfit = profit
-            else:
-                buy = sell
+            else:#otherwise, our buy is pointing to something higher than our sell, which doesn't work
+                buy = sell#increment.
             sell += 1
 
         return maxProfit
