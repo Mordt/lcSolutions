@@ -34,9 +34,8 @@ class Solution(object):
                 profit = prices[sell] - prices[buy]
                 if profit > maxProfit:
                     maxProfit = profit
-                sell += 1
             else:
                 buy += 1
-                sell += 1
+            sell += 1
 
         return maxProfit
