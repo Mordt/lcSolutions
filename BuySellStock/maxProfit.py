@@ -35,7 +35,7 @@ class Solution(object):
                 if profit > maxProfit:
                     maxProfit = profit
             else:
-                buy += 1
+                buy = sell
             sell += 1
 
         return maxProfit
