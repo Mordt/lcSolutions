@@ -28,7 +28,7 @@ class Solution(object):
         sell = 1
         maxProfit = 0
 
-        while buy < len(prices):
+        while sell < len(prices):
             #isprofitable?
             if buy < sell:
                 profit = sell - buy
