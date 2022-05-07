@@ -30,8 +30,8 @@ class Solution(object):
 
         while sell < len(prices):
             #isprofitable?
-            if buy < sell:
-                profit = sell - buy
+            if prices[buy] < prices[sell]:
+                profit = prices[sell] - prices[buy]
                 if profit > maxProfit:
                     maxProfit = profit
                 sell += 1
