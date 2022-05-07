@@ -24,6 +24,9 @@ class Solution(object):
         #once at end, return max profit value
         #mem is O(1), time is O(n)
 
+        #this is our sliding window though, it's our two pointers adjacent to each other checking for certain conditions
+        #ain't so bad all things considered.
+
         buy = 0
         sell = 1
         maxProfit = 0
