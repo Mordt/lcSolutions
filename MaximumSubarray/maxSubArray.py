@@ -8,6 +8,6 @@ class Solution(object):
         curSum = 0
         for n in nums:
             curSum += n  # add current sum to each value
-            maxSum = max(curSum, maxSum)
-            curSum = max(0, curSum)
+            maxSum = max(curSum, maxSum)  # get max of these
+            curSum = max(0, curSum)  # reassign current max
         return maxSum
