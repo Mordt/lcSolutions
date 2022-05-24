@@ -1,3 +1,7 @@
 Introduction
 
-often when dealing with arrays, we
+often when dealing with arrays, we are asked to deal with subarrays
+
+for example, finding the average of all 5-element sub arrays in a given array
+
+can solve this with brute force or sliding window
