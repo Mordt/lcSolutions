@@ -8,7 +8,7 @@ can solve this with brute force or sliding window
 
 brute force:
     Python example:
-    
+
     def find_averages_of_subarrays(K, arr):
         result = []
         for i in range(len(arr)-K+1):
@@ -20,12 +20,17 @@ brute force:
 
     return result
 
-
 def main():
-  result = find_averages_of_subarrays(5, [1, 3, 2, 6, -1, 4, 1, 8, 2])
-  print("Averages of subarrays of size K: " + str(result))
-
+    result = find_averages_of_subarrays(5, [1, 3, 2, 6, -1, 4, 1, 8, 2])
+    print("Averages of subarrays of size K: " + str(result))
 
 main()
 
-    time complexity
+    time complexity:
+        since for every element in array we are calculating the sum of its next k elements,
+        the time comp of above algo will be O(n*k), where N is the number of elements in input array.
+
+        super inefficient, we can find a better way.
+
+        the inefficiency is that for any two consecutive subarrays of size 5, the overlapping part (which will contain four elements),
+        will be evaluated twice.
