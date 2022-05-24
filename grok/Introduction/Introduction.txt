@@ -1,0 +1,3 @@
+Introduction
+
+often when dealing with arrays, we
