@@ -62,3 +62,7 @@ def main():
 
 
 main()
+
+additional notes:
+    in some problems, the size of the sliding window is not fixed. we have to expand or
+    shrink the window based on the problem constraints.
