@@ -40,3 +40,25 @@ main()
             to reuse the sum from the prev subarray, we subtract the outgoing element from the window
             and add the incoming element in the sliding window.
             this saves us from going through whole array to find sum, and as such the time comp is reduced to O(n).
+
+sliding window Python:
+def find_averages_of_subarrays(K, arr):
+  result = []
+  windowSum, windowStart = 0.0, 0
+  for windowEnd in range(len(arr)):
+    windowSum += arr[windowEnd]  # add the next element
+    # slide the window, no need to slide if we've not hit the required window size of 'k'
+    if windowEnd >= K - 1:
+      result.append(windowSum / K)  # calculate the average
+      windowSum -= arr[windowStart]  # subtract the element going out
+      windowStart += 1  # slide the window ahead
+
+  return result
+
+
+def main():
+  result = find_averages_of_subarrays(5, [1, 3, 2, 6, -1, 4, 1, 8, 2])
+  print("Averages of subarrays of size K: " + str(result))
+
+
+main()
