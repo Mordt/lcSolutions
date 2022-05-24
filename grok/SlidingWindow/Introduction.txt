@@ -34,3 +34,9 @@ main()
 
         the inefficiency is that for any two consecutive subarrays of size 5, the overlapping part (which will contain four elements),
         will be evaluated twice.
+
+        efficient solution would be to visualise each subarray as a sliding window of 5 elements.
+        this means that we slide the window by one elemenet when proceeding with subarrays.
+            to reuse the sum from the prev subarray, we subtract the outgoing element from the window
+            and add the incoming element in the sliding window.
+            this saves us from going through whole array to find sum, and as such the time comp is reduced to O(n).
