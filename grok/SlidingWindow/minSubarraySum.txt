@@ -2,3 +2,5 @@ Problem Statement
 
 given an array of positive numbers and a positive nuber 's', find the length of the 
 smallest contiguous subarray whose sum is greater than or equal to 's'. return 0 otherwise.
+
+so returning length of subarray, need to keep track of sliding window size
