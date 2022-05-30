@@ -20,7 +20,6 @@ sliding window pattern, but with dynamic window size.
 code:
 import math
 
-
 def smallest_subarray_sum(s, arr):
   window_sum = 0
   min_length = math.inf
@@ -37,7 +36,6 @@ def smallest_subarray_sum(s, arr):
     return 0
   return min_length
 
-
 def main():
   print("Smallest subarray length: " 
      + str(smallest_subarray_sum(7, [2, 1, 5, 2, 3, 2])))
@@ -46,5 +44,11 @@ def main():
   print("Smallest subarray length: " 
      + str(smallest_subarray_sum(8, [3, 4, 1, 1, 6])))
 
-
 main()
+
+Time and Space complexity
+time comp will be O(N). the outer for loops runs for all elements, and the inner while loop processes
+    each element only once; therefore the time comp of the algo will be O(N+N), which is
+    asymptotically equivalent to O(N).
+
+Space comp is in constant space (O(1))
