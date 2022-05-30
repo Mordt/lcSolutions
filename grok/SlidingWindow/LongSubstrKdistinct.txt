@@ -52,3 +52,9 @@ def main():
            + str(longest_substring_with_k_distinct("cbbebi", 3)))
 
 main()
+
+Time and space comp
+time comp is O(N), where N is the size of the input string. outer for loop processes all characters and inner loop only once,
+therefore it's O(N+N) which is asymptotically equivalent to O(N).
+
+space comp is O(K), as we will be storing a max of K+1 chars in hashmap.
