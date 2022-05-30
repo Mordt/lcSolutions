@@ -7,3 +7,12 @@ so returning length of subarray, need to keep track of sliding window size
 solution
 
 sliding window pattern, but with dynamic window size.
+    1. First, add up elements from the beginning of array until their sum becomes greater than
+        or equal to s
+    2. These elements will constitute our sliding window. We are asked to find the smallest
+        such window having a sum >= S. Remember the length of this window as the smallest so far.
+    3. Keep adding one element in the sliding window (slide window ahead) in a stepwise fashion
+    4. at each step, try to shrink the window from the beginning. Shrink until window sum is smaller than
+        S again. Necessary to ensure the smallest window. Happens in multiple steps:
+            -check if current window length is the smallest so far, and if so, remember its length
+            -subtract the first element of the window from the sum to shrink the sliding window.
