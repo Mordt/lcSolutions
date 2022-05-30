@@ -8,3 +8,11 @@ Solution
 sliding window, as before, can use a dynamic sliding window as in the smallest subarray
 with a greater sum problem. Can use a HashMap to remember the frequency of each character we have processed.
 problem solved thusly:
+    1. first insert characters from the beginning of the string until we have k distinct chars in HashMap
+    2. these chars will constitute our sliding window. we are asked to find the longest window with no more than
+        k distinct chars. remember the length of this window as the longest so far.
+    3. keep adding one character to the window in a stepwise fashion.
+    4. in each step, try to shrink the window from the beginning if the num of distinct chars in map is greater than k.
+        shrink the window till we have no more than k chars in map. necessary to find longest window.
+    5. while shrinking, decrement the chars frequency when departing the window and remove it from map if its frequency equals zero.
+    6. at the end of each step, we'll check if the current window length is the longest so far, and if so record its length.
