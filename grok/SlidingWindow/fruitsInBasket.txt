@@ -1,2 +1,12 @@
 Fruits into Basket (medium)
 Problem
+visiting farm to collect fruit. 1 row of fruit truees, with two baskets. pick as many fruit as possible in the given baskets.
+
+array of chars where each char represents a fruit tree. farm has following restrictions:
+    1. each basket can only have one type of fruit. no limit to how many fruit in basket
+    2. can start with any tree, but cant skip a tree once started.
+    3. can pick exactly one fruit frrom every tree until you cannot. so stop when you have to pick from a third fruit type.
+
+goal is to preturn the max number of fruit in both baskets.
+
+solution
