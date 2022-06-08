@@ -10,3 +10,6 @@ array of chars where each char represents a fruit tree. farm has following restr
 goal is to preturn the max number of fruit in both baskets.
 
 solution
+    problem follows sliding window pattern, find the length of the longest subarray with no more
+    than two distinct characters (or fruit types). turns into longest substring with k distinct chars where k = 2.
+
