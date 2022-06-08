@@ -45,3 +45,10 @@ def main():
            + str(fruits_into_baskets(['A', 'B', 'C', 'B', 'B', 'C'])))
 
 main()
+
+time and space comp
+time comp is O(N) where n is the number of chars in input array. O(N+N) for same reasons as other problem.
+space comp is O(1), as max of 3 fruit types stored in the frequency map
+
+
+[a,a,o,o,m,m,a,o]
