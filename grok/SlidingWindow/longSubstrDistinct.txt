@@ -44,3 +44,9 @@ def main():
   print("Length of the longest substring: " + str(non_repeat_substring("abccde")))
 
 main()
+
+time and space comp
+time comp is O(N), N = num of chars in input string
+space comp is O(K), where k = number of distinct chars in input string.
+    also means that K <= N, because in the worst casem the whole string might not have any
+    duplicate characters, so the entire string will be added to the hashmap.
