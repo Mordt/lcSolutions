@@ -48,3 +48,5 @@ def main():
 main()
 
 time and space comp
+time comp is O(N), N = count of numbers in input array
+algo runs in constant space O(1).
