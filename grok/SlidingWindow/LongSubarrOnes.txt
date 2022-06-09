@@ -8,3 +8,14 @@ Example
     Input: Array=[0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1], k=2
     Output: 6
     Explanation: Replace the '0' at index 5 and 8 to have the longest contiguous subarray of 1s having length 6.
+
+Solution
+    Sliding window pattern, similar to Longest substring with same letters after replacement.
+    only difference is that we only have 2 chars in input arrays (1 and 0).
+
+    iterate through array to add one number at a time to window. keep track of max number of repeating 1s in curr window
+    (called maxOnesCount).
+    at any one time we know that we can have a window with 1s repeating MaxOnesCount times, so we should try to replace 
+    the remaining 0s. if we have more than 'k' remaining 0s, shrink the window.
+
+Python solution
