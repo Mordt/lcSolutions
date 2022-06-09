@@ -8,3 +8,17 @@ example
     Input: String="aabccbb", k=2
     Output: 5
     Explanation: Replace the two 'c' with 'b' to have a longest repeating substring "bbbbb".
+
+solution
+    sliding window pattern, can use dynamic sliding window like in longest substr with distinct chars.
+    can use hashmap to count the frequency of each letter.
+
+    1. will iterate through the string to add one letter at a time to the window.
+    2. will keep track of the count of maximum repeating letter in ANY window. clal it maxRepeatLetterCount.
+    3. at any time, we know that we have a window with one letter repeating maxRepeatLetterCount times;
+        meaning we should try to replace the remaining letters.
+        - If remainin gletters are less than or equal to 'k', we can replace them all.
+        - if we have mroe than 'k' remaining letters, shrink the window as we cannot replace more than 'k' letters.
+    
+    we do not need to know the exact max count of the current window, only whether it exceeds the historical max
+    count, and that only happens because of a newly added char.
