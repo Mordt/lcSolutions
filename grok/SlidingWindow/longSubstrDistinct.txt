@@ -9,3 +9,10 @@ Input: String="aabccbb"
 Output: 3
 Explanation: The longest substring with distinct characters is "abc".
 
+solution
+    sliding window pattern, can use similar dynamic sliding win strategy as discussed in 
+    Longest substring with k chars.
+    Use a hashmap to remember the last index of each char we have processed, whenever we get to dup,
+    shrink sliding window to ensure we always have distinct chars in the window.
+
+code soln
