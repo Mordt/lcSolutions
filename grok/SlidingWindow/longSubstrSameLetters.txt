@@ -59,3 +59,7 @@ def main():
   print(length_of_longest_substring("abccde", 1))
 
 main()
+
+space and time comp
+time comp is O(N) where N is the number of letters in input string
+space comp is O(26) as we only expect lowercase letters to be stored in map. asymptotically, this is equal to O(1).
