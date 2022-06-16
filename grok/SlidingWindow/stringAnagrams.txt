@@ -11,3 +11,9 @@ Example 1:
 Input: String="ppqp", Pattern="pq"
 Output: [1, 2]
 Explanation: The two anagrams of the pattern in the given string are "pq" and "qp".
+
+Written Solution
+problem follows the Sliding Window pattern and is similar to the Permutation in a String problem.
+We need to find every occurance of any permutation of the pattern in the string. use a list to store the starting indices of the anagrams of the pattern in the string.
+
+
