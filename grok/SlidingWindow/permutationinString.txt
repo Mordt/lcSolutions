@@ -8,4 +8,9 @@ permutation is defined as the rearranging of the characters of the string. for e
 
 if a string has 'n' distinct characters, it will have n! permutations.
 
+Example:
+Input: String="oidbcaf", Pattern="abc"
+Output: true
+Explanation: The string contains "bca" which is a permutation of the given pattern.
+
 
