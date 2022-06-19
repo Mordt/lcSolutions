@@ -60,4 +60,7 @@ def main():
 
 main()
 
+time and space comp
+time comp is O(N+M), N and M are num of chars in input string and num of chars in pattern
 
+space comp is O(M) since in worst case the whole pattern can have distinct chars in hashmap. will also need O(N) space for the result list, only when the pattern has only one char and the string contains only that char.
