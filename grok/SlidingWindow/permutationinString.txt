@@ -69,5 +69,8 @@ def main():
 
 main()
 
+time and space comp
+time comp is O(N+M) where N and M are the number of chars in the input string and pattern, respectively.
 
+space comp is O(M) since in the worst case the pattern will have distinct chars that will go into the map.
 
