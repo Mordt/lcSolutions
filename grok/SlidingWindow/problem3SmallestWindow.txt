@@ -1,0 +1,8 @@
+Problem Challenge 3: Smallest Window containing Substring (hard)
+
+Problem statement
+given a string and a pattern, find the smallest substring in the given string which has all the character occurences of the given pattern.
+
+Example
+
+
