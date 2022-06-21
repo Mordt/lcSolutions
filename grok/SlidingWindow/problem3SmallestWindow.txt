@@ -9,5 +9,15 @@ Input: String="aabdec", Pattern="abc"
 Output: "abdec"
 Explanation: The smallest substring having all characters of the pattern is "abdec"
 
+Written Solution
+sliding window pattern, similar to permutation in a string. we need to find a substring having all chars in pattern.
+so required substring can have additional letters.
 
+  1. keep a running count of each matching instance of a char
+  2. when matched all chars, try to shrink window from beginning
+    keeping track of the smallest substring that has all matching chars.
+  3. stop shrinkage when we remove a matched char from window.
+  fine to decrement duplicate matching letters.
+
+code solution
 
