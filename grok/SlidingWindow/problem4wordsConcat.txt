@@ -67,3 +67,8 @@ def main():
   print(find_word_concatenation("catcatfoxfox", ["cat", "fox"]))
 
 main()
+
+time and space comp
+time complexity is O(N*M*Len) where N is num of chars in given string, M is total num of words, and len is len of word
+space comp is O(M) since in worst case, all words are stored in two maps. may also need O(N) space for resulting list.
+overall space comp of algo will be O(M+N).
