@@ -3,3 +3,4 @@ in problems where we deal with sorted lists and need to find a set of elements t
 two pointers approach becomes quite useful. set of elements could be a pair, a triplet or even a subarray.
 
 example:
+given an array of sorted nums and a target sum, find a pair in the array whose sum is equal to the given target.
