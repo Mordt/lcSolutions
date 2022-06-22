@@ -1,0 +1,5 @@
+Introduction
+in problems where we deal with sorted lists and need to find a set of elements that fulfil certain constraints,
+two pointers approach becomes quite useful. set of elements could be a pair, a triplet or even a subarray.
+
+example:
