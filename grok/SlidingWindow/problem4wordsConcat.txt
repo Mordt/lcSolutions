@@ -1,0 +1,1 @@
+Problem challenge 4: words concatenation (hard)
