@@ -1,1 +1,7 @@
 Problem challenge 4: words concatenation (hard)
+
+Problem statement
+given a string and a list of words, find all of the starting indices of substrings in the given string
+that are a concatenation of the given words exactly once without overlap. all words same length.
+
+Example
