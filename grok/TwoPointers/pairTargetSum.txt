@@ -23,17 +23,13 @@ Explanation: The numbers at index 0 and 2 add up to 11: 2+9=11
 my attempt:
 function python(array, target):
     #given array, create pointers
-    start = array[0]
-    end = array[len(array)-1]
+    start = 0
+    end = len(array)-1
 
-    output = [-1,-1]
-
-    while start != end: #ensures that we keep going till they equal each other
+    while start < end: #ensures that we keep going till they equal each other
         currSum = array[start]+array[end]
         if currSum == target:
-            output[0] = start
-            output[1] = end
-            return output
+            return[start, end]
         elif currSum < target:
             start +=1
         else #currSum > target:
