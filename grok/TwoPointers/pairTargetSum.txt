@@ -36,7 +36,7 @@ function python(array, target):
             end -= 1
     
     #only reach here if error
-    return 
+    return [-1,-1]
 
 written solution:
     follow two pointers approach, one at beginning and one at end. at every step, check if numbers add to sum.
