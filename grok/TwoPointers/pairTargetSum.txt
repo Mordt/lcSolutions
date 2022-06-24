@@ -1,5 +1,11 @@
 Pair with Target Sum (easy)
 
+old approach:
+copy design gurus solution and code, summarise
+
+new approach:
+copy problem and examples, ATTEMPT solution, then compare with actual solution.
+
 Problem statement
 given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
 write a function to return the indices of the two numbers such that they add up to the given target.
