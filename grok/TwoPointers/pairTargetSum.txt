@@ -20,7 +20,7 @@ Input: [2, 5, 9, 11], target=11
 Output: [0, 2]
 Explanation: The numbers at index 0 and 2 add up to 11: 2+9=11
 
-attempt:
+my attempt:
 function python(array, target):
     #given array, create pointers
     start = array[0]
@@ -41,3 +41,12 @@ function python(array, target):
     
     #only reach here if error
     return 
+
+written solution:
+    follow two pointers approach, one at beginning and one at end. at every step, check if numbers add to sum.
+    if so, found pair and return.
+    if not do:
+        1. if sum greater than target, this means we need a pair with a smaller sum. decrement end pointer.
+        2. if sum less than target, increment start pointer for inverse reason.
+
+code soln
