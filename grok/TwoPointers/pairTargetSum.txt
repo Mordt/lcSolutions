@@ -1,3 +1,7 @@
 Pair with Target Sum (easy)
 
 Problem statement
+given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
+write a function to return the indices of the two numbers such that they add up to the given target.
+
+example 1
