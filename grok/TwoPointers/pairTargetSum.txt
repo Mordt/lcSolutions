@@ -19,3 +19,25 @@ example 2
 Input: [2, 5, 9, 11], target=11
 Output: [0, 2]
 Explanation: The numbers at index 0 and 2 add up to 11: 2+9=11
+
+attempt:
+function python(array, target):
+    #given array, create pointers
+    start = array[0]
+    end = array[len(array)-1]
+
+    output = [-1,-1]
+
+    while start != end: #ensures that we keep going till they equal each other
+        currSum = array[start]+array[end]
+        if currSum == target:
+            output[0] = start
+            output[1] = end
+            return output
+        elif currSum < target:
+            start +=1
+        else #currSum > target:
+            end -= 1
+    
+    #only reach here if error
+    return 
