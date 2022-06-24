@@ -15,3 +15,5 @@ at every step, see if numbers add up to target sum if not, do:
         so to try mroe pairs, we can decrement the end pointer.
     2. if the sum is less than the target sum, it means we need a pair with a larger sum. so to 
         try more pairs, increment the start-pointer.
+
+The time complexity of the above algo will be O(N).
