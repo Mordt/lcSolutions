@@ -1,0 +1,15 @@
+Binary Search Tree Traversal
+
+            1
+          /   \
+        2       3
+      /   \
+    4       5
+
+Inorder
+
+Preorder
+
+Postorder
+
+Breadth First/level order/BFS
