@@ -30,5 +30,13 @@ class Solution:
             3. repeat until queue is empty or desired node is found.
         """
 
-        
-        
+        curr = root
+        visited, queue = []
+
+        visited.append(curr)
+        queue.append(curr)
+
+        while True:
+
+            curr = queue.pop(0)
+            print(curr)
