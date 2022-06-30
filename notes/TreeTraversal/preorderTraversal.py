@@ -37,10 +37,11 @@ class Solution:
             
             if HasChildren(curr):
                 print(curr.data)
-                
+                stack.append(curr.right)
+                curr = curr.left
 
-            elif(stack):
-                #more stuff
+            elif(stack):#leaf node, but stack has nodes
+                print(curr.data)
 
             else:
                 break
