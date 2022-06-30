@@ -24,7 +24,7 @@ class Solution:
             #curr == null
             elif(nodeStack):  # if stack not empty
                 curr = nodeStack.pop()
-                print(curr)
+                print(curr.data, end = " ")
                 curr = curr.right
             else:
                 break
