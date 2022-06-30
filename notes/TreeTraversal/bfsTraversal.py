@@ -40,8 +40,10 @@ class Solution:
 
             curr = queue.pop(0)
             print(curr)
-
+            
+            """
             for neighbour in graph[s]:
                 if neighbour not in visited:
                     visited.append(neighbour)
                     queue.append(neighbour)
+            """
