@@ -23,7 +23,7 @@ class Solution:
     
     #helper function, check if node has children
     def HasChildren(root):
-        if root.left is not None and root.right is not None:
+        if root.left is not None or root.right is not None:
             return True
         return False
 
@@ -35,13 +35,14 @@ class Solution:
         #iterate thru
         while True:
             
-            if HasChildren(curr):
+            if HasChildren(curr):#must not be null
                 print(curr.data)
                 stack.append(curr.right)
                 curr = curr.left
 
             elif(stack):#leaf node, but stack has nodes
                 print(curr.data)
+                curr = stack.pop()
 
             else:
                 break
