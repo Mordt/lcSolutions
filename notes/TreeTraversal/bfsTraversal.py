@@ -21,4 +21,14 @@ class Node:
 '''
 
 class Solution:
-    def InOrder(self, root):
+    def levelOrder(self, root):
+
+        """
+        algorithm:
+            1. start at root, visit unvisited children. mark as visited, display, add to the queue.
+            2. if no unvisited children remain, dequeue the first vertex.
+            3. repeat until queue is empty or desired node is found.
+        """
+
+        
+        
