@@ -1,7 +1,7 @@
 class Solution:
-    def InOrder(self, root):
+    def InOrder(self,root):
         # code here
-
+        
         #create stack for iterative traversal
         """
         1) Create an empty stack S.
@@ -15,6 +15,13 @@ class Solution:
         """
         nodeStack = []
         curr = root
-        nodeStack.insert(0, curr)
+        nodeStack.insert(0,curr)
         while curr != null:
-            curr = curr -> left
+            
+            curr = curr.left
+        
+        #curr == null
+        if len(nodeStack) != 0:#if stack not empty
+            popped = nodeStack.pop(0)
+            print(popped)
+            curr = popped.right
