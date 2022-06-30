@@ -35,7 +35,7 @@ class Solution:
         #iterate thru
         while True:
             
-            if HasChildren(curr):#must not be null
+            if HasChildren(curr) == True:#must not be null
                 print(curr.data)
                 stack.append(curr.right)
                 curr = curr.left
