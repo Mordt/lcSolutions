@@ -26,8 +26,10 @@ class Solution:
                 curr = nodeStack.pop()
                 print(curr.data, end = " ")
                 curr = curr.right
+
             else:
                 break
+
         print()
 
         """
