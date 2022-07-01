@@ -37,9 +37,11 @@ class Solution:
         queue.append(curr)
 
         while True:
-
+            if curr == None:
+                return
             curr = queue.pop(0)
             print(curr)
+
             
             """
             for neighbour in graph[s]:
@@ -47,3 +49,4 @@ class Solution:
                     visited.append(neighbour)
                     queue.append(neighbour)
             """
+        print()
