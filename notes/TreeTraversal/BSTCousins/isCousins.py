@@ -16,6 +16,10 @@ class Solution(object):
         #level order traversal but keep track of node depth and
         #keep track of parent value
         #store node/level/parent
+        
+        queue = collections.deque()
+        nodeMap = collections.defaultdict()
+        queue.append((root, 0, 0))
 
         while True:
 
