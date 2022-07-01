@@ -17,3 +17,15 @@ class Solution(object):
         #keep track of parent value
         #store node/level/parent
 
+        while True:
+
+            if x in nodeMap and y in nodeMap:
+                #do stuff
+
+            if node.left: # if node->left is not null
+
+                #do stuff
+            if node.right: # if node->right is not null
+                #do stuff
+
+
