@@ -12,4 +12,7 @@ class Solution(object):
         :type y: int
         :rtype: bool
         """
-        
+        #level order traversal but keep track of node depth and
+        #keep track of parent value
+
+
