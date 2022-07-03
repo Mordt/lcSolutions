@@ -19,13 +19,14 @@ class Node:
         self.left = None
         self.right = None
 '''
+#helper function, check if node has children
+def HasChildren(root):
+    if root.left is not None or root.right is not None:
+            return True
+    return False
 class Solution:
     
-    #helper function, check if node has children
-    def HasChildren(root):
-        if root.left is not None or root.right is not None:
-            return True
-        return False
+    
 
     def PreOrder(self, root):
         #create stack, initialise curr to root
