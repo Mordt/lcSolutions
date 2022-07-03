@@ -29,7 +29,9 @@ class Solution:
             2. if no unvisited children remain, dequeue the first vertex.
             3. repeat until queue is empty or desired node is found.
         """
-
+        if root is None:
+            return
+            
         curr = root
         visited, queue = []
 
@@ -42,17 +44,11 @@ class Solution:
             curr = queue.pop(0)
             print(curr)
 
-            
-            """
-            for neighbour in graph[s]:
-                if neighbour not in visited:
-                    visited.append(neighbour)
-                    queue.append(neighbour)
-            """
+
         print()
 
 
-"""
+
     def bfs(self, root=None):
         if root is None:
             return
@@ -69,4 +65,3 @@ class Solution:
 
             print(queue)
 
-"""
