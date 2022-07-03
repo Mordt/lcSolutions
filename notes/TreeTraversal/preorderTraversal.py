@@ -25,9 +25,6 @@ def HasChildren(root):
             return True
     return False
 class Solution:
-    
-    
-
     def PreOrder(self, root):
         #create stack, initialise curr to root
         curr = root
