@@ -31,7 +31,7 @@ class Solution:
         """
         if root is None:
             return
-            
+
         curr = root
         visited, queue = []
 
@@ -39,11 +39,13 @@ class Solution:
         queue.append(curr)
 
         while True:
-            if curr == None:
-                return
             curr = queue.pop(0)
             print(curr)
-
+            if curr.left is not None:
+                queue.append(curr.left)
+            
+            if curr.right is not None:
+                queue.append(curr.right)
 
         print()
 
