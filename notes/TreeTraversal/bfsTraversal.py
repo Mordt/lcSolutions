@@ -50,7 +50,7 @@ class Solution:
         print()
 
 
-
+"""
     def bfs(self, root=None):
         if root is None:
             return
@@ -67,3 +67,4 @@ class Solution:
 
             print(queue)
 
+"""
