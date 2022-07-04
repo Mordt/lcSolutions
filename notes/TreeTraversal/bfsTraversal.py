@@ -21,7 +21,7 @@ class Node:
 '''
 
 class Solution:
-    def levelOrder(self, root):
+    def LevelOrder(self, root):
 
         """
         algorithm:
