@@ -26,3 +26,7 @@ A red black tree is a BST with the following red-black properties:
 the number of black nodes on any path from, but not including, a node x to a leaf is called the black height of a node, denoted bh(x). we can prove the following lemma:
 lemma:
     a red black tree with n internal nodes has height at most 2log(n+1).
+    this demonstrates why red-black BSTs are good, they can always be searched in O(logn) time.
+
+as with heaps, additions and deletions from red-black trees destroy the red black property, so it needs to be restored.
+to achieve this, we observe the followeing operations on red-black trees.
