@@ -6,3 +6,10 @@ like an array, but indices are related to the data.
     so knowing the data we want helps us find the index in O(1) time.
 
 hash tables use a one way hash function for this. can be used as a hashmap for fast retrieval.
+
+hash function 
+    calculation applied to a key to transform it to an index numbers corresponding to a position in the hash table.
+    for numeric keys, divide the key by the number of available addresses, n, and take the remainder.
+        address = key mod N
+    for alphanumeric keys, divide the sum of ascii codes by the number of available addresses, n, and take the remainder.
+
