@@ -41,6 +41,7 @@ class Solution:
         while True:
             curr = queue.pop(0)
             print(curr)
+            
             if curr.left is not None:
                 queue.append(curr.left)
             
