@@ -22,3 +22,7 @@ A red black tree is a BST with the following red-black properties:
         (3 implies that on any path from root to leaf, red nodes must not be adjacent.)
         (however any number of black nodes may appear in a sequence.)
     4. every simple path from a node to a descendant leaf contains the same number of black nodes.
+
+the number of black nodes on any path from, but not including, a node x to a leaf is called the black height of a node, denoted bh(x). we can prove the following lemma:
+lemma:
+    a red black tree with n internal nodes has height at most 2log(n+1).
