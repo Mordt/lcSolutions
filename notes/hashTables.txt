@@ -24,8 +24,16 @@ collisions
             if this is used and we later search for an item that has been linear probed, we will also ahve to conduct a linear search to find it.
 
     can solve the above by increasing the size of the array.
+    can run into issues like prime clustering
 
 closed addressing
     can resolve this with separate chaining (index pointing to linked list)
     search can be used with index calculation then linked list traversal.
     worst case is n if all items are in the same index, however more items are in their correct spots.
+
+hash function objectives
+    minimise collisions to increase data retrieval and reduce collision calculations\
+    uniform distribution of hash values 
+    easy to calculate
+    resolve any collisions
+    
