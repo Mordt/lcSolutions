@@ -1,5 +1,12 @@
 Red black trees
 
+why red black trees?
+    rb trees are self balancing BSTs due to their "colour" property.
+    the rules around whether a node is red or black ensures that after an insertion
+    or deletion, the tree remains balanced.
+
+    this means that the tree is always in an optimal shape for searching.
+
 BST with one extra attribute for each node: colour, red or black. also need to keep track of the parent of each node.
 so the red black structue would be:
 
