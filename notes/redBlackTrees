@@ -1,3 +1,12 @@
 Red black trees
 
 BST with one extra attribute for each node: colour, red or black. also need to keep track of the parent of each node.
+so the red black structue would be:
+
+struct t_red_black_node {
+    enum { red, black } colour;
+    void *item;
+    struct t_red_black_node *left,
+                     *right,
+                     *parent;
+    }
