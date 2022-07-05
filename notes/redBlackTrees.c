@@ -66,4 +66,8 @@ left_rotate( Tree T, node x ) {
     y->left = x;
     x->parent = y;
     }
-    
+
+insertion
+somewhat complex, involves a number of cases. we start by inserting the new node x in the tree just as we would
+for any other bst, using the tree-insert function. the new node is labelled red and may destroy the red-black property.
+the main loop moves up the tree, restoring the red-black property.
