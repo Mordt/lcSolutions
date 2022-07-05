@@ -1,1 +1,3 @@
 Red black trees
+
+BST with one extra attribute for each node: colour, red or black. also need to keep track of the parent of each node.
