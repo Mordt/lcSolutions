@@ -6,6 +6,11 @@ why red black trees?
     or deletion, the tree remains balanced.
 
     this means that the tree is always in an optimal shape for searching.
+    the time will remain around O(logn).
+
+    these type of trees show identical memory footprint to classic trees.
+    normal operations take h time (height of tree). search, insert and delete all become O(logn)
+    with a red-black tree.
 
 BST with one extra attribute for each node: colour, red or black. also need to keep track of the parent of each node.
 so the red black structue would be:
