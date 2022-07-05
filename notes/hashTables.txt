@@ -19,9 +19,13 @@ collisions
     sometimes the same index is generated for two different keys.
     this is known as a collision.
 
-    can resolve this with separate chaining (index pointing to linked list)
     can also use open addressing to place an item in the next available spot in the instance of a collision.
         linear probing. used to find next available slot. if reaches the end, might cycle to the beginning.
             if this is used and we later search for an item that has been linear probed, we will also ahve to conduct a linear search to find it.
 
     can solve the above by increasing the size of the array.
+
+closed addressing
+    can resolve this with separate chaining (index pointing to linked list)
+    search can be used with index calculation then linked list traversal.
+    worst case is n if all items are in the same index, however more items are in their correct spots.
