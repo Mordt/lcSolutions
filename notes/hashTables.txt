@@ -1,1 +1,8 @@
 hash table notes
+
+made for fast data retrieval at the cost of space
+
+like an array, but indices are related to the data.
+    so knowing the data we want helps us find the index in O(1) time.
+
+hash tables use a one way hash function for this. can be used as a hashmap for fast retrieval.
