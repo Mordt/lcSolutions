@@ -17,4 +17,6 @@ Definition of a red black tree
 
 A red black tree is a BST with the following red-black properties:
     1. every node is either red or black.
-    2. 
+    2. every leaf (null) is black
+    3. if a node is red, then both its children are black.
+    4. every simple path from a node to a descendant leaf contains the same number of black nodes.
