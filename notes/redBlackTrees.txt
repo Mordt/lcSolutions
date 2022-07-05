@@ -10,3 +10,11 @@ struct t_red_black_node {
                      *right,
                      *parent;
     }
+
+rn null nodes which terminate the tree are leaves and coloured black.
+
+Definition of a red black tree
+
+A red black tree is a BST with the following red-black properties:
+    1. every node is either red or black.
+    2. 
