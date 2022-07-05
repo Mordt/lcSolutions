@@ -33,3 +33,7 @@ to achieve this, we observe the followeing operations on red-black trees.
 
 Rotations:
     a rotation is a local operation in a search tree that preserves in order traversal key ordering.
+
+        y           x
+      /   \       /   \
+     x
