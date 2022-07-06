@@ -20,6 +20,7 @@ class Node:
         self.right = None
 '''
 #my attempt:
+from collections import deque
 class Solution:
     def PostOrder(self, root):
 
