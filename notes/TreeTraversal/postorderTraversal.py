@@ -49,25 +49,19 @@ class Solution:
 
 #online solution:
 # Iterative function to perform postorder traversal on the tree
-
+# main idea is to iterate through and add to a "printing" stack.
 
 def postorderIterative(root):
 
-    # return if the tree is empty
     if root is None:
         return
 
-    # create an empty stack and push the root node
     stack = deque()
     stack.append(root)
+    out = deque()  # another stack to store postorder traversal
 
-    # create another stack to store postorder traversal
-    out = deque()
+    while stack: #loop till stack is empty
 
-    # loop till stack is empty
-    while stack:
-
-        # pop a node from the stack and push the data into the output stack
         curr = stack.pop()
         out.append(curr.data)
 
@@ -78,6 +72,5 @@ def postorderIterative(root):
         if curr.right:
             stack.append(curr.right)
 
-    # print postorder traversal
     while out:
         print(out.pop(), end=' ')
