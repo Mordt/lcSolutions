@@ -30,8 +30,16 @@ class Solution:
         curr = root
         
         while True:
-            #if
+            if curr is not None:
+                stack.append(curr)
+                if curr.right is not None:
+                    stack.append(curr.right)
+                
+                curr = curr.left
 
-            #elif
-
-            #else
+            elif(stack): #if stack not empty
+                curr = stack.pop()
+                print(curr.data)
+                
+            else:
+                break 
