@@ -1,19 +1,19 @@
 Leadership principles
 
-Customer Obsession
-Leaders start with the customer and work backwards. 
-They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers.
+    Customer Obsession
+        Leaders start with the customer and work backwards. 
+        They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers.
+    My example:
+        worked extra hard to reduce a page load time by 3 seconds for a customer using accordion salesforce sections instead of individual related lists.
 
-My example:
-    worked extra hard to reduce a page load time by 3 seconds for a customer using accordion salesforce sections instead of individual related lists.
+    Ownership
+        Leaders are owners. They think long term and don’t sacrifice long-term value for short-term results. 
+        They act on behalf of the entire company, beyond just their own team. They never say “that’s not my job."
+    my example:
+        took ownership of several provider workflows in old application, ensuring that the process of creating a new provider to the endscreen was smooth and seamless.
 
-Ownership
-Leaders are owners. They think long term and don’t sacrifice long-term value for short-term results. 
-They act on behalf of the entire company, beyond just their own team. They never say “that’s not my job."
+    Learn and Be curious
+    my example:
+        learned sfdx to transition team to the use of sandboxes and staging environments for a more efficient workflow.
 
-my example:
-    took ownership of several provider workflows in old application, ensuring that the process of creating a new provider to the endscreen was smooth and seamless.
-
-Learn and Be curious
-my example:
-    learned sfdx to transition team to the use of sandboxes and staging environments for a more efficient workflow.
+technical topics
