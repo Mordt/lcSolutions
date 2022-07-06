@@ -75,3 +75,8 @@ def postorderIterative(root):
 
     while out:
         print(out.pop(), end = " ")
+
+"""
+time and space analysis
+when n is the number of nodes in tree, time comp is O(n), space comp is O(n)
+"""
