@@ -71,3 +71,18 @@ def inorderIterative(root):
             print(curr.data, end=' ')
 
             curr = curr.right
+
+#recursive solution
+# A function to do preorder tree traversal
+def printPreorder(root):
+
+    if root:
+
+        # First print the data of node
+        print(root.val),
+
+        # Then recur on left child
+        printPreorder(root.left)
+
+        # Finally recur on right child
+        printPreorder(root.right)
