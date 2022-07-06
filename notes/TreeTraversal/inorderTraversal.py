@@ -1,3 +1,24 @@
+#inorder is left, root, right
+"""
+            1
+          /   \
+        2       3
+      /   \
+    4       5
+
+    the above prints:
+    4,2,5,1,3
+"""
+
+'''
+# Node Class:
+class Node:
+    def init(self,val):
+        self.data = val
+        self.left = None
+        self.right = None
+'''
+
 class Solution:
     def InOrder(self, root):
         # code here
