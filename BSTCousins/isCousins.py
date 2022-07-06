@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from collections import deque
 class Solution(object):
     def isCousins(self, root, x, y):
         """
@@ -17,8 +18,8 @@ class Solution(object):
         #keep track of parent value
         #store node/level/parent
         
-        queue = collections.deque()
-        nodeMap = collections.defaultdict()
+        queue = deque()
+        nodeMap = defaultdict()
         queue.append((root, 0, 0))
 
         while True:
