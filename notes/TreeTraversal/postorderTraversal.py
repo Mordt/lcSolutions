@@ -25,7 +25,9 @@ class Solution:
 
         #initial ideas
         # put root on stack, then right node then process left subtree
-        
+        if root is None:
+            return
+            
         stack = []
         curr = root
         
