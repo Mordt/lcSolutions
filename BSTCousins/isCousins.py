@@ -17,7 +17,10 @@ class Solution(object):
         #level order traversal but keep track of node depth and
         #keep track of parent value
         #store node/level/parent
-        
+        #two nodes are the same if they have different parents but equal depth
+        #keep track of xdepth, ydepth
+        #find xparent, yparent
+
         queue = deque()
         nodeMap = defaultdict()
         queue.append((root, 0, 0))
@@ -33,4 +36,8 @@ class Solution(object):
             if node.right: # if node->right is not null
                 #do stuff
 
+        if xdepth == ydepth and xparent != yparent:
+            return True
+        else:
+            return False
 
