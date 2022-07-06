@@ -74,6 +74,7 @@ class Solution:
 # Function to print all nodes of a given level from left to right
 # Function to print level order traversal of a given binary tree
 
+from collections import deque
 def levelOrderTraversal(root):
 
     # base case
