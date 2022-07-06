@@ -19,10 +19,19 @@ class Node:
         self.left = None
         self.right = None
 '''
-
+#my attempt:
 class Solution:
     def PostOrder(self, root):
 
         #initial ideas
-        #wanna put root on stack, then right node then 
-        #print left node if it's a leaf
+        # put root on stack, then right node then process left subtree
+        
+        stack = []
+        curr = root
+        
+        while True:
+            #if
+
+            #elif
+
+            #else
