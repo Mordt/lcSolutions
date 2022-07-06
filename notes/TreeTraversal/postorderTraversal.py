@@ -80,3 +80,16 @@ def postorderIterative(root):
 time and space analysis
 when n is the number of nodes in tree, time comp is O(n), space comp is O(n)
 """
+#postorder recursive solution
+def printPostorder(root):
+
+    if root:
+
+        # First recur on left child
+        printPostorder(root.left)
+
+        # the recur on right child
+        printPostorder(root.right)
+
+        # now print the data of node
+        print(root.val),
