@@ -27,7 +27,7 @@ class Solution:
         # put root on stack, then right node then process left subtree
         if root is None:
             return
-            
+
         stack = []
         curr = root
         
@@ -45,3 +45,38 @@ class Solution:
                 
             else:
                 break 
+
+#online solution:
+# Iterative function to perform postorder traversal on the tree
+
+
+def postorderIterative(root):
+
+    # return if the tree is empty
+    if root is None:
+        return
+
+    # create an empty stack and push the root node
+    stack = deque()
+    stack.append(root)
+
+    # create another stack to store postorder traversal
+    out = deque()
+
+    # loop till stack is empty
+    while stack:
+
+        # pop a node from the stack and push the data into the output stack
+        curr = stack.pop()
+        out.append(curr.data)
+
+        # push the left and right child of the popped node into the stack
+        if curr.left:
+            stack.append(curr.left)
+
+        if curr.right:
+            stack.append(curr.right)
+
+    # print postorder traversal
+    while out:
+        print(out.pop(), end=' ')
