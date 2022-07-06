@@ -42,7 +42,7 @@ class Solution:
 
             elif(stack): #if stack not empty
                 curr = stack.pop()
-                print(curr.data)
+                print(curr.data, end = " ")
                 
             else:
                 break 
@@ -74,4 +74,4 @@ def postorderIterative(root):
             stack.append(curr.right)
 
     while out:
-        print(out.pop(), end=' ')
+        print(out.pop(), end = " ")
