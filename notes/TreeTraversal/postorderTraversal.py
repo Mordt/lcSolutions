@@ -32,7 +32,7 @@ class Solution:
         stack = []
         curr = root
         
-        while True:
+        while stack:
             if curr is not None:
                 stack.append(curr)
                 if curr.right is not None:
@@ -47,7 +47,7 @@ class Solution:
             else:
                 break 
 
-#online solution:
+#correct solution:
 # Iterative function to perform postorder traversal on the tree
 # main idea is to iterate through and add to a "printing" stack.
 
@@ -62,6 +62,7 @@ def postorderIterative(root):
 
     while stack: #loop till stack is empty
 
+        #algorithm is stacking root, then 
         curr = stack.pop()
         out.append(curr.data)
 
