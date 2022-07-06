@@ -20,6 +20,7 @@ class Node:
         self.right = None
 '''
 #helper function, check if node has children
+from collections import deque
 def HasChildren(root):
     if root.left is not None or root.right is not None:
             return True
@@ -32,7 +33,6 @@ class Solution:
 
         #iterate thru
         while True:
-            
             if HasChildren(curr) == True:#must not be null
                 print(curr.data)
                 stack.append(curr.right)
@@ -53,10 +53,7 @@ class Solution:
 
 def inorderIterative(root):
 
-    # create an empty stack
     stack = deque()
-
-    # start from the root node (set current node to the root node)
     curr = root
 
     # if the current node is None and the stack is also empty, we are done
