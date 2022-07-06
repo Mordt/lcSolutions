@@ -73,9 +73,8 @@ class Solution:
 #recursive solution
 # Function to print all nodes of a given level from left to right
 
-
+#helper function for main level order traversal function
 def printLevel(root, level):
-
     # base case
     if root is None:
         return False
