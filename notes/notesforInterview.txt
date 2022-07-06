@@ -17,3 +17,6 @@ Leadership principles
         learned sfdx to transition team to the use of sandboxes and staging environments for a more efficient workflow.
 
 technical topics
+    keep customer at the forefront of your mind when designing these solutions.
+    check edge cases with code, know tradeoffs and limitations of different data structures and algorithms
+    expect to defend design choices
