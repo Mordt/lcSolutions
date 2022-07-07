@@ -39,7 +39,7 @@ class Solution:
         #visited.append(curr)
         queue.append(curr)
 
-        while True:
+        while len(queue)>0:
             curr = queue.pop(0)
             print(curr)
 
