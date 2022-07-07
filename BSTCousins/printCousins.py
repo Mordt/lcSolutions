@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
-    def isCousins(self, root, node):
+    def isCousins(self, root, x, y):
         """
         :type root: TreeNode
         :type x: int
@@ -26,12 +26,19 @@ class Solution(object):
         
         #map to track nodes->parents
         nodeMap = {}
-        nodeMap[curr.val] = None
+        nodeMap[curr.val] = (None, level)
         if curr.left:
-            nodeMap[curr.left.val] = [curr.val, level]
+            level += 1
+            nodeMap[curr.left.val] = (curr.val, level)
+            level -= 1
         if curr.right:
-            nodeMap[curr.right.val] = [curr.val, level]
+            level += 1
+            nodeMap[curr.right.val] = (curr.val, level)
+            level -= 1
         
+        #checking if map works
+        for key, value in nodeMap.items():
+            print(key, value[0], value[1])
         
         while len(queue) > 0:
             found = False
@@ -62,10 +69,7 @@ class Solution(object):
                 break
             level += 1
             
-        #checking if map works
-        for key, value in nodeMap.items():
-            print(key, value)
-        print("xdepth and ydepth are ", xdepth, ydepth)
+        #print("xdepth and ydepth are ", xdepth, ydepth)
         
         if xdepth == ydepth and nodeMap.get(x) != nodeMap.get(y): #if depth the same but diff parents
             return True
