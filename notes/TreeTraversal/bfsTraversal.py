@@ -33,9 +33,10 @@ class Solution:
             return
 
         curr = root
-        visited, queue = []
+        #visited, 
+        queue = []
 
-        visited.append(curr)
+        #visited.append(curr)
         queue.append(curr)
 
         while True:
