@@ -1,12 +1,9 @@
-#leetcode so far:
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
-
 class Solution(object):
     def isCousins(self, root, x, y):
         """
@@ -18,7 +15,7 @@ class Solution(object):
         if root is None:
             return False
 
-        #keep track of level
+        #to keep track of x,y level
         xdepth = 0
         ydepth = 0
 
@@ -36,6 +33,7 @@ class Solution(object):
             nodeMap[curr.right.val] = curr.val
 
         while len(queue) > 0:
+            found = False
 
             levelSize = len(queue)
             while(levelSize != 0):
@@ -47,6 +45,7 @@ class Solution(object):
                 elif curr.val == y:
                     ydepth = level
                 if xdepth != 0 and ydepth != 0:
+                    found = True  # lets us break out early if we've encountered both vals
                     break
 
                 if curr.left:
@@ -58,6 +57,8 @@ class Solution(object):
 
                 levelSize -= 1
 
+            if found:
+                break
             level += 1
 
         #checking if map works
