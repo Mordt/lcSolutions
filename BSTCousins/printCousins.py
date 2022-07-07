@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
-    def isCousins(self, root, x, y):
+    def isCousins(self, root, x):
         """
         :type root: TreeNode
         :type x: int
@@ -14,11 +14,7 @@ class Solution(object):
         """
         if root is None:
             return False
-        
-        #to keep track of x,y level
-        xdepth = 0
-        ydepth = 0
-        
+
         queue = []
         curr = root
         queue.append(curr)
@@ -44,14 +40,6 @@ class Solution(object):
                 
                 curr = queue.pop(0)
                 
-                if curr.val == x:
-                    xdepth = level
-                elif curr.val == y:
-                    ydepth = level
-                if xdepth != 0 and ydepth != 0:
-                    found = True
-                    break
-
                 if curr.left:
                     queue.append(curr.left)
                     level += 1
