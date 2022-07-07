@@ -37,16 +37,17 @@ class Solution(object):
             curr = queue.pop(0)
             if curr == x:
                 xdepth = level
-            if curr == y:
+            elif curr == y:
                 ydepth == level
 
-            if x in nodeMap and y in nodeMap:
-                #do stuff
+            else: #not x or y, populate map
+                curr
 
-            if node.left: # if node->left is not null
+
+            if curr.left: # if node->left is not null
 
                 #do stuff
-            if node.right: # if node->right is not null
+            if curr.right: # if node->right is not null
                 #do stuff
 
         if xdepth == ydepth and parMap.get(x) != parMap.get(y): #if depth the same but diff parents
