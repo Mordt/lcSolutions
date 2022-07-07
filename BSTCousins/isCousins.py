@@ -4,6 +4,18 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+"""
+Complexity Analysis
+time complexity
+  in terms of time, worst case it's O(n), equal to level order traversal.
+  Despite the nested loop, the whole program only traverses the queue once
+  the queue will have potentially all nodes so it is O(n).
+
+space complexity:
+  space complexity is O(n) in the worst case, as we may potentially have to 
+  traverse through all nodes.
+"""
 class Solution(object):
     def isCousins(self, root, x, y):
         """
@@ -45,7 +57,7 @@ class Solution(object):
                 elif curr.val == y:
                     ydepth = level
                 if xdepth != 0 and ydepth != 0:
-                    found = True  # lets us break out early if we've encountered both vals
+                    found = True  #terminate program when both nodes are found
                     break
 
                 if curr.left:
@@ -71,3 +83,4 @@ class Solution(object):
             return True
         else:
             return False
+
