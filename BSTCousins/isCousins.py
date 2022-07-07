@@ -55,3 +55,41 @@ class Solution(object):
         else:
             return False
 
+#leetcodde so far:
+class Solution(object):
+    def isCousins(self, root, x, y):
+        """
+        :type root: TreeNode
+        :type x: int
+        :type y: int
+        :rtype: bool
+        """
+        if root is None:
+            return False
+
+        #keep track of level
+        queue = deque()
+        curr = root
+        queue.append(curr)
+        level = 0
+
+        while len(queue) > 0:
+
+            levelSize = len(queue)
+
+            while(levelSize != 0):
+
+                curr = queue.pop()
+                print(curr.val, level)
+
+                if curr.left:
+                    queue.append(curr.left)
+
+                if curr.right:
+                    queue.append(curr.right)
+
+                levelSize -= 1
+
+            level += 1
+
+        return False
