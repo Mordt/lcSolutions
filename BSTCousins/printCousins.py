@@ -10,7 +10,7 @@ class Solution(object):
         :type root: TreeNode
         :type x: int
         :type y: int
-        :rtype: bool
+        :rtype: none
         """
         if root is None:
             return False
@@ -20,7 +20,7 @@ class Solution(object):
         queue.append(curr)
         level = 0
         
-        #map to track nodes->parents
+        #map to track nodes -> (parent, depth)
         nodeMap = {}
         nodeMap[curr.val] = (None, level)
         if curr.left:
@@ -68,10 +68,5 @@ class Solution(object):
             
             if keyParent != nodeParent and keyDepth == nodeDepth:
                 print(key)
-        
-        if xdepth == ydepth and nodeMap.get(x) != nodeMap.get(y): #if depth the same but diff parents
-            return True
-        else:
-            return False
-                       
+                      
 
