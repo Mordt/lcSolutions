@@ -22,6 +22,7 @@ class Solution(object):
         #find xparent, yparent
 
         queue = deque()
+        xdepth, ydepth = 0
         nodeMap = defaultdict()
         queue.append((root, 0, 0))
 
