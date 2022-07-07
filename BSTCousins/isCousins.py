@@ -31,8 +31,14 @@ class Solution(object):
         parMap[curr.left] = curr
         parMap[curr.right] = curr
         
-
+        level = 0
         while True:
+
+            curr = queue.pop(0)
+            if curr == x:
+                xdepth = level
+            if curr == y:
+                ydepth == level
 
             if x in nodeMap and y in nodeMap:
                 #do stuff
@@ -43,7 +49,7 @@ class Solution(object):
             if node.right: # if node->right is not null
                 #do stuff
 
-        if xdepth == ydepth and xparent != yparent:
+        if xdepth == ydepth and parMap.get(x) != parMap.get(y): #if depth the same but diff parents
             return True
         else:
             return False
