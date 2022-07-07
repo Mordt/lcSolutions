@@ -15,49 +15,41 @@
 # Node Class:
 class Node:
     def init(self,val):
-        self.val = val
+        self.data = val
         self.left = None
         self.right = None
 '''
 
+class Solution:
+    def LevelOrder(self, root):
 
-class Solution(object):
-    def isCousins(self, root, x, y):
         """
-        :type root: TreeNode
-        :type x: int
-        :type y: int
-        :rtype: bool
+        algorithm:
+            1. start at root, visit unvisited children. mark as visited, display, add to the queue.
+            2. if no unvisited children remain, dequeue the first vertex.
+            3. repeat until queue is empty or desired node is found.
         """
         if root is None:
-            return False
+            return
 
-        #keep track of level
-        queue = deque()
         curr = root
+        #visited, 
+        queue = []
+
+        #visited.append(curr)
         queue.append(curr)
-        level = 0
 
-        while len(queue) > 0:
+        while len(queue)>0:
+            curr = queue.pop(0)
+            print(curr)
 
-            levelSize = len(queue)
+            if curr.left is not None:
+                queue.append(curr.left)
+            
+            if curr.right is not None:
+                queue.append(curr.right)
 
-            while(levelSize != 0):
-
-                curr = queue.pop()
-                print(curr.val, level)
-
-                if curr.left:
-                    queue.append(curr.left)
-
-                if curr.right:
-                    queue.append(curr.right)
-
-                levelSize -= 1
-
-            level += 1
-
-        return False
+        print()
 
 
 """
