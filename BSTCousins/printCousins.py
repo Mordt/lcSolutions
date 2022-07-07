@@ -36,10 +36,6 @@ class Solution(object):
             nodeMap[curr.right.val] = (curr.val, level)
             level -= 1
         
-        #checking if map works
-        for key, value in nodeMap.items():
-            print(key, value[0], value[1])
-        
         while len(queue) > 0:
             found = False
             
@@ -58,10 +54,14 @@ class Solution(object):
 
                 if curr.left:
                     queue.append(curr.left)
-                    nodeMap[curr.left.val] = curr.val
+                    level += 1
+                    nodeMap[curr.left.val] = (curr.val, level)
+                    level -= 1
                 if curr.right:
                     queue.append(curr.right)
-                    nodeMap[curr.right.val] = curr.val
+                    level += 1
+                    nodeMap[curr.right.val] = (curr.val, level)
+                    level -= 1
                 
                 levelSize -= 1
             
@@ -69,9 +69,21 @@ class Solution(object):
                 break
             level += 1
             
-        #print("xdepth and ydepth are ", xdepth, ydepth)
+        #print("x is: ", x, nodeMap.get(x)[0])
+        #checking if map works
+        nodeParent = nodeMap.get(x)[0]
+        nodeDepth = nodeMap.get(x)[1]
+        
+        for key in nodeMap:
+            keyParent = nodeMap.get(key)[0]
+            keyDepth = nodeMap.get(key)[1]
+            
+            if keyParent != nodeParent and keyDepth == nodeDepth:
+                print(key)
         
         if xdepth == ydepth and nodeMap.get(x) != nodeMap.get(y): #if depth the same but diff parents
             return True
         else:
             return False
+                       
+
