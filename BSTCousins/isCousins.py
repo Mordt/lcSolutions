@@ -62,8 +62,6 @@ class Solution(object):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-#from collections import deque
-
 
 class Solution(object):
     def isCousins(self, root, x, y):
@@ -112,7 +110,6 @@ class Solution(object):
                 if curr.left:
                     queue.append(curr.left)
                     nodeMap[curr.left.val] = curr.val
-
                 if curr.right:
                     queue.append(curr.right)
                     nodeMap[curr.right.val] = curr.val
@@ -121,7 +118,14 @@ class Solution(object):
 
             level += 1
 
+        #checking if map works
         for key, value in nodeMap.items():
             print(key, value)
 
-        return False
+        print("x and y are ", x, y)
+
+        # if depth the same but diff parents
+        if xdepth == ydepth and nodeMap.get(x) != nodeMap.get(y):
+            return True
+        else:
+            return False
