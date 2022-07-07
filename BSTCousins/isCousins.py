@@ -63,6 +63,7 @@ class Solution(object):
 #         self.left = left
 #         self.right = right
 
+
 class Solution(object):
     def isCousins(self, root, x, y):
         """
@@ -78,7 +79,7 @@ class Solution(object):
         xdepth = 0
         ydepth = 0
 
-        queue = deque()
+        queue = []
         curr = root
         queue.append(curr)
         level = 0
@@ -94,11 +95,9 @@ class Solution(object):
         while len(queue) > 0:
 
             levelSize = len(queue)
-
             while(levelSize != 0):
 
-                curr = queue.pop()
-                #print(curr.val, level)
+                curr = queue.pop(0)
 
                 if curr.val == x:
                     xdepth = level
@@ -119,10 +118,9 @@ class Solution(object):
             level += 1
 
         #checking if map works
-        for key, value in nodeMap.items():
-            print(key, value)
-
-        print("x and y are ", x, y)
+        #for key, value in nodeMap.items():
+        #    print(key, value)
+        #print("xdepth and ydepth are ", xdepth, ydepth)
 
         # if depth the same but diff parents
         if xdepth == ydepth and nodeMap.get(x) != nodeMap.get(y):
