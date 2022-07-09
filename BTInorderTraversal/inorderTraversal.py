@@ -16,6 +16,7 @@ class Solution(object):
         
         stack = []
         curr = root
+        inorder = []
         
         while True:
             #if curr is not null, add to stack
@@ -27,10 +28,9 @@ class Solution(object):
             elif(stack):#if current is null and stack is not empty
                 #pop stack, print and go right
                 curr = stack.pop()
-                print(curr.val)
+                #print(curr.val)
+                inorder.append(curr.value)
                 curr = curr.right
             else:
                 break
-            print()           
-            
-            
+            print(inorder)           
