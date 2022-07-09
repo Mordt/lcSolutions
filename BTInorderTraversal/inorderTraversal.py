@@ -10,15 +10,4 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        if root == []:
-            return []
-        
-        toReturn = []
-        while root != Null:
-            toReturn.append(root.val)
-            if root.left <= root.right:
-                root = root.left
-            else:
-                root = root.right
-        
 
