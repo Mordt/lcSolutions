@@ -10,6 +10,19 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        #inorder traversal is left, root, right
-        # will use stack to keep track
-
+        
+        if root is None:
+            return None
+        
+        stack = []
+        curr = root
+        
+        while True:
+            #if curr is not null, add to stack
+            #keep going till end is reached
+            if curr is not None:
+                stack.append(curr)
+                curr = curr.left
+            
+            
+            
