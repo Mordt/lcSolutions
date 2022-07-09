@@ -24,5 +24,13 @@ class Solution(object):
                 stack.append(curr)
                 curr = curr.left
             
+            elif(stack):#if current is null and stack is not empty
+                #pop stack, print and go right
+                curr = stack.pop()
+                print(curr.val)
+                curr = curr.right
+            else:
+                break
+            print()           
             
             
