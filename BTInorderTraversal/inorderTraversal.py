@@ -29,8 +29,13 @@ class Solution(object):
                 #pop stack, print and go right
                 curr = stack.pop()
                 #print(curr.val)
-                inorder.append(curr.value)
+                inorder.append(curr.val)
                 curr = curr.right
             else:
                 break
-            print(inorder)           
+        
+        return inorder
+
+
+
+
