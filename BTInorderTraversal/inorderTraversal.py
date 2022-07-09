@@ -10,4 +10,6 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
+        #inorder traversal is left, root, right
+        # will use stack to keep track
 
