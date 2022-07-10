@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+#inorder is left, root, right
 class Solution(object):
     def inorderTraversal(self, root):
         """
