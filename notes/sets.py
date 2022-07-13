@@ -10,4 +10,8 @@ set creation:
 set = {"one", "two", "three"}
 
 sets do not allow for duplicate items.
+sets cannot be referred to by index or key
+
+duplicate values will be ignored. set = {"apple", "apple", "pear", "tomato"} when accessed
+will just be apple, pear, tomato
 
