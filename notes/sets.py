@@ -15,3 +15,5 @@ sets cannot be referred to by index or key
 duplicate values will be ignored. set = {"apple", "apple", "pear", "tomato"} when accessed
 will just be apple, pear, tomato
 
+sets can take any data type, and sets are defined as objects with data type 'set'
+
