@@ -24,3 +24,5 @@ Technical Questions
 
   prepare commonly used algos such as sorting, binary searching and data structures such as HashMaps, Tries, and Linked Lists.
 
+Coding
+
