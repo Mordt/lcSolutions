@@ -35,4 +35,17 @@ Coding
   of common and useful design patterns as well as knowledge of how to write software in an object oriented way.
   Know about inheritance, aggregation, interfaces and composition. Expect to justify your decisions and discuss tradeoffs.
 
+Before You Start
+  Understand the coding challenge. ask clarifying questions. be vocal in your thought process as you code.
+  Make sure to cover edge cases as this is a common mistake. Be prepared to talk through each one and
+  ensure your code can handle it.
+
+  Discuss any shortcomings your solution may have. Discuss any solutions you may have implemented but didin't.'
+  Will be writing code that is as close to production ready as possible. PRACTICE.
+
+System Design
+
+
+
+
 
