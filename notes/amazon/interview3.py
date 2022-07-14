@@ -59,8 +59,15 @@ System Design
     abstraction
     real world performance
     latency
+    scalability
+    estimation
+    reliability
+    caching
+    cache invalidation
+  this section is challenging, but its important to be creative and have fun. 
 
-
+System Design Topics To Review
+  
 
 
 
