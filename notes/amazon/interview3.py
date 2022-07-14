@@ -25,4 +25,14 @@ Technical Questions
   prepare commonly used algos such as sorting, binary searching and data structures such as HashMaps, Tries, and Linked Lists.
 
 Coding
+  need to pay heed to clean, well-structured code that meets amazons standards.
+  this obviously means easy to read code with intuitive variable and function names,
+  as well as abstracted methods/functions and classes.
+  Code also needs to be extensible and maintainable, which is covered by the afotementioned
+  abstraction into functions
+  
+  Object Oriented practices are also another way of writing quality software. You need to have working knowledge
+  of common and useful design patterns as well as knowledge of how to write software in an object oriented way.
+  Know about inheritance, aggregation, interfaces and composition. Expect to justify your decisions and discuss tradeoffs.
+
 
