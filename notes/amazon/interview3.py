@@ -44,6 +44,21 @@ Before You Start
   Will be writing code that is as close to production ready as possible. PRACTICE.
 
 System Design
+  Ownership of open-ended, ambiguous problems are assigned to SDEs. Our job is to come up with the best solution.
+  To assess communication skills, I will be asked an opened ended question and I will be judged on how well I can
+  bounce ideas off the interviewer, guide the question, and sketch/trawl through the solution.
+
+  Remember:
+    handle constraints
+    know the inputs you might be receiving.
+  Need to be able to know the scope of the problem at hand.
+
+  Consider:
+    concurrency
+    networking
+    abstraction
+    real world performance
+    latency
 
 
 
