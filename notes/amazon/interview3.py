@@ -67,7 +67,10 @@ System Design
   this section is challenging, but its important to be creative and have fun. 
 
 System Design Topics To Review
-  
+  Distributed Computing
+    understand service-oriented architecture, map reduce, distributed caching, laod balancing and other basic
+    distributed computing concepts.
+
 
 
 
