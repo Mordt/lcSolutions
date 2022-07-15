@@ -13,5 +13,11 @@ structure
   an english alphabet node appears as follows
 
   """
-
+  struct TrieNode 
+  { 
+      struct TrieNode *children[ALPHABET_SIZE];
+       // isEndOfWord is true if the node 
+       // represents end of a word 
+       bool isEndOfWord; 
+  }; 
   """
