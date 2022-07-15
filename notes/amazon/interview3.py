@@ -72,7 +72,8 @@ System Design Topics To Review
     distributed computing concepts.
   Scaling
     scaling is important, so research caching, load balancing, nonrelational databases, microservices and sharding
-
+  operational performance is important. make sure you understand the points of failure, how to ensure the service
+  is working at an optimal level, what is involved in the troubleshooting/problem solving aspect of it.
 
 
 
