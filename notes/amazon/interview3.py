@@ -70,6 +70,8 @@ System Design Topics To Review
   Distributed Computing
     understand service-oriented architecture, map reduce, distributed caching, laod balancing and other basic
     distributed computing concepts.
+  Scaling
+    scaling is important, so research caching, load balancing, nonrelational databases, microservices and sharding
 
 
 
