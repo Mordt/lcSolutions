@@ -4,7 +4,6 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-#
 class Solution(object):
     def maxDepth(self, root):
         """
@@ -19,7 +18,17 @@ class Solution(object):
         queue.append(root)
         
         while(queue):
+            
             levelSize = len(queue)
-            while(levelSize != 0):
+            
+            while(levelSize != 0):#level order algo here
                 
                 curr = queue.pop(0)
+                if curr.left:
+                    queue.append(curr.left)
+                if curr.right:
+                    queue.append(curr.right)
+            
+            level += 1
+            
+        print level
