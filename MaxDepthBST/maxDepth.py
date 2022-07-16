@@ -12,6 +12,9 @@ class Solution(object):
         """
         #classic level order traversal
         #keep track of level as u go
+        if root == None:
+            return None
+        
         
         level = 0
         queue = []
@@ -28,6 +31,7 @@ class Solution(object):
                     queue.append(curr.left)
                 if curr.right:
                     queue.append(curr.right)
+                levelSize -= 1
             
             level += 1
             
