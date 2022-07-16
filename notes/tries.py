@@ -26,4 +26,8 @@ inserting a key
   every character of the input key is treated as an individual trie node. children is an array of pointers
   to next level trie nodes.
   the key character acts as an index to the array children. If the input key is new or an extension of an existing key
-  we need to construct the non-existing nodes of the existing key, and mark the end of the word for the last node.  
+  we need to construct the non-existing nodes of the existing key, and mark the end of the word for the last node.
+
+Complexities
+  Time comp is O(key_length)
+  Space comp is O(alphabet_size*key_length_N) where N is the number of keys in the trie.   
