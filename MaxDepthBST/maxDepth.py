@@ -15,7 +15,6 @@ class Solution(object):
         if root == None:
             return None
         
-        
         level = 0
         queue = []
         queue.append(root)
@@ -23,7 +22,6 @@ class Solution(object):
         while(queue):
             
             levelSize = len(queue)
-            
             while(levelSize != 0):#level order algo here
                 
                 curr = queue.pop(0)
@@ -34,5 +32,8 @@ class Solution(object):
                 levelSize -= 1
             
             level += 1
-            
-        print level
+
+        return level
+                
+                
+         
