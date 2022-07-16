@@ -13,7 +13,7 @@ class Solution(object):
         #classic level order traversal
         #keep track of level as u go
         if root == None:
-            return None
+            return 0
         
         level = 0
         queue = []
