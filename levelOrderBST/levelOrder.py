@@ -19,17 +19,18 @@ class Solution(object):
         queue.append(curr)
         
         printList = []
-        levelList = []
+        
         
         level = 0
         
         while len(queue) != 0:
             
+            levelList = []
             levelSize = len(queue)
             while levelSize != 0:
             
                 curr = queue.pop(0)
-                levelList.append(curr)
+                levelList.append(curr.val)
 
                 if curr.left:
                     queue.append(curr.left)
@@ -42,4 +43,5 @@ class Solution(object):
             level += 1
         
         return printList
+
 
