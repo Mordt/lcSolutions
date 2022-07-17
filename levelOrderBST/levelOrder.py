@@ -10,4 +10,21 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
+        #level order needs a queue, a curr
+        if root is None:
+            return None
+        
+        curr = root
+        queue = []
+        queue.append(curr)
+        
+        while True:
+            curr = queue.pop(0)
+            print(curr)
+            
+            if curr.left:
+                queue.append(curr.left)
+            if curr.right:
+                queue.append(curr.right)
+
 
