@@ -11,6 +11,12 @@ Note: A leaf is a node with no children.
 
 Example 1:
 
+        3
+      /   \
+    9      20
+          /  \
+        15    7
+
 Input: root = [3,9,20,null,null,15,7]
 Output: 2
 
