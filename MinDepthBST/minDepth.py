@@ -24,20 +24,18 @@ class Solution(object):
             while(levelSize != 0):#level order algo here
                 
                 curr = queue.pop(0)
-                if curr.left:
-                    queue.append(curr.left)
-                else:
-                    return level
+                if curr.left or curr.right:
+                    if curr.left:
+                        queue.append(curr.left)
+
+                    if curr.right:
+                        queue.append(curr.right)
                 
-                if curr.right:
-                    queue.append(curr.right)
-                else:
+                else:#leaf node as there is no left or right child
                     return level
                 
                 levelSize -= 1
             
             level += 1
 
-        #return level
-
-
+ 
