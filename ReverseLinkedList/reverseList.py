@@ -13,7 +13,14 @@ class Solution(object):
         if head == None:
             return None
         
+        prev = None
         curr = head
-        while curr.next is not None:
+        
+        while curr:
             nextPtr = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nextPtr
             
+        return prev
+
