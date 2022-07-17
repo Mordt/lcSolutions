@@ -10,6 +10,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+        #will modify from maxdepth by returning as soon as we see a not curr.left/right
         if root == None:
             return 0
         
@@ -25,11 +26,18 @@ class Solution(object):
                 curr = queue.pop(0)
                 if curr.left:
                     queue.append(curr.left)
+                else:
+                    return level
+                
                 if curr.right:
                     queue.append(curr.right)
+                else:
+                    return level
+                
                 levelSize -= 1
             
             level += 1
 
-        return level
-                
+        #return level
+
+
