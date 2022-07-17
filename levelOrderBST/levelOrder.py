@@ -17,16 +17,29 @@ class Solution(object):
         curr = root
         queue = []
         queue.append(curr)
+        
         printList = []
+        levelList = []
+        
+        level = 0
         
         while len(queue) != 0:
-            curr = queue.pop(0)
-            printList.append(curr.val)
             
-            if curr.left:
-                queue.append(curr.left)
-            if curr.right:
-                queue.append(curr.right)
-        return printList
+            levelSize = len(queue)
+            while levelSize != 0:
+            
+                curr = queue.pop(0)
+                levelList.append(curr)
 
+                if curr.left:
+                    queue.append(curr.left)
+                if curr.right:
+                    queue.append(curr.right)
+                
+                levelSize -= 1
+            
+            printList.append(levelList)
+            level += 1
+        
+        return printList
 
