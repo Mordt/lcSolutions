@@ -14,7 +14,7 @@ class Solution(object):
         if root == None:
             return 0
         
-        level = 0
+        level = 1
         queue = []
         queue.append(root)
         
