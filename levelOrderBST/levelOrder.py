@@ -17,14 +17,16 @@ class Solution(object):
         curr = root
         queue = []
         queue.append(curr)
+        printList = []
         
-        while True:
+        while len(queue) != 0:
             curr = queue.pop(0)
-            print(curr)
+            printList.append(curr.val)
             
             if curr.left:
                 queue.append(curr.left)
             if curr.right:
                 queue.append(curr.right)
+        return printList
 
 
