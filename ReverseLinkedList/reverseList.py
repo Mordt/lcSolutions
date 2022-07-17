@@ -9,10 +9,6 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        
-        if head == None:
-            return None
-        
         prev = None
         curr = head
         
@@ -23,4 +19,4 @@ class Solution(object):
             curr = nextPtr
             
         return prev
-
+            
