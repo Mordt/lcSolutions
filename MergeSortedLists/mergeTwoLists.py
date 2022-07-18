@@ -10,27 +10,12 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        #checking edge cases lists empty
-        if list1 == None and list2 == None:
-            return None
-        if list1 == None:
-            return list2
-        if list2 == None:
-            return list1
+        dummy = ListNode
+        tail = dummy
         
-        #track current position in lists
-        retl = ListNode()
-        track1 = ListNode()
-        track2 = ListNode()
-        
-        while retl != None:
-            if track1 == None:
-                #stuff
-            if track 2 == None:
-                #stuff
+        while list1 and list2:
+            if list1.val < list2.val:
+                tail.next = list1.val
+            else:#list2.val < list1.val
+                tail.next = list2.val
                 
-            if list1.value < list2.value:
-                retl = list1
-                retl.next
-            
-            retl = retl.next
