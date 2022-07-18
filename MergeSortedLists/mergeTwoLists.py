@@ -10,6 +10,9 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+        if list1 == None and list2 == None:
+            return None
+        
         dummy = ListNode
         tail = dummy
         
@@ -28,5 +31,4 @@ class Solution(object):
             tail.next = list2
             
         return dummy.next
-
-
+                
