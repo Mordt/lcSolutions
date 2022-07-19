@@ -14,13 +14,13 @@ class Solution(object):
                 return middle
             
             elif target > nums[middle]:
-                highMid = len(nums)-middle
-                middle = int(highMid/2)
+                highMid = int((len(nums)-middle)/2)
+                middle += highMid
                 continue
+                
             else:#target < nums[middle]
                 middle = int(middle/2)
                 continue
         
         return -1
-
 
