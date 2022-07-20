@@ -6,21 +6,21 @@ class Solution(object):
         :rtype: int
         """
         
-        middle = int(len(nums)/2)
+        #new idea: use lo and hi from article
+        lo = 0
+        hi = len(nums)-1
+        mid = lo + int(len(nums)/2)
         
-        while True:
+        while lo < hi:
             
             if target == nums[middle]:
                 return middle
             
             elif target > nums[middle]:
-                highMid = int((len(nums)-middle)/2)
-                middle += highMid
-                continue
+                lo = mid
                 
             else:#target < nums[middle]
-                middle = int(middle/2)
-                continue
+                hi = mid - 1
         
         return -1
 
