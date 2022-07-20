@@ -11,7 +11,7 @@ class Solution(object):
         hi = len(nums)-1
         mid = lo + int(len(nums)/2)
         
-        while lo < hi:
+        while lo <= hi:
             mid = lo + (hi-lo)/2
             if target == nums[mid]:
                 return mid
