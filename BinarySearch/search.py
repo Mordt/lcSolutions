@@ -12,14 +12,14 @@ class Solution(object):
         mid = lo + int(len(nums)/2)
         
         while lo < hi:
+            mid = lo + (hi-lo)/2
+            if target == nums[mid]:
+                return mid
             
-            if target == nums[middle]:
-                return middle
-            
-            elif target > nums[middle]:
+            elif target > nums[mid]:
                 lo = mid
                 
-            else:#target < nums[middle]
+            else:#target < nums[mid]
                 hi = mid - 1
         
         return -1
