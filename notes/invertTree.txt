@@ -1,2 +1,13 @@
 #use recursion to call left tree, invert, call right
+pseudocode:
+  if node null
+      return
+  else
+      struct temp
+      invert (node.left)
+      invert (node.right)
+
+      temp = node.left
+      node.left = node.right
+      node.right = temp
 
