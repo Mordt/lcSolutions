@@ -10,4 +10,16 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        
+        temp = TreeNode
+        if root == None:
+            return
+        else:
+            invertTree(root.left)
+            invertTree(root.right)
+            
+            temp = root.left
+            root.left = root.right
+            root.right = temp
+            
+        return root
+
