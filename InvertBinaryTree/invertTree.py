@@ -14,8 +14,8 @@ class Solution(object):
         if root == None:
             return
         else:
-            invertTree(root.left)
-            invertTree(root.right)
+            self.invertTree(root.left)
+            self.invertTree(root.right)
             
             temp = root.left
             root.left = root.right
