@@ -11,4 +11,8 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        
+        #solve recursively checking values at each step
+        if not s and not t:
+            return True #both empty and identical
+
+        if s and t and s.val == t.val: 
