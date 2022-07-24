@@ -14,6 +14,10 @@ class Solution(object):
         #iterate recursively
         #use helper function to compare if subtrees are the same
         
+        if not subroot:#edge case where subtree is empty
+            return True 
+        
+        
     def isSameTree(self, s, t): #compares if s and t are the same 
         if not s and not t:
             return True
