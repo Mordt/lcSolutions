@@ -10,4 +10,19 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-                
+        #assume nodes aren't repeated.
+        #create "visited set"
+        if head == None:
+            return True
+        
+        visited = {}
+        while head is not None:
+            if head in visited:
+                return True #cycle discovered
+            else:
+                #add to visited
+                visited.add(head)
+                head = head.next
+        #only here if reach end of list and not cycle
+        return False # not a cycle
+
