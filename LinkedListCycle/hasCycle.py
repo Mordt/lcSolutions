@@ -27,7 +27,8 @@ class Solution(object):
         #only here if reach end of list and not cycle
         return False # not a cycle
 
-#adding constant solution below:
+#adding constant space solution below:
+#uses tortoise and hare algorithm for quick result
 
 # Definition for singly-linked list.
 # class ListNode(object):
