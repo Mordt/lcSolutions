@@ -20,8 +20,8 @@ class Solution(object):
         if self.isSametree(root, subroot):
             return True
         else:
-            self.isSubtree(root.left, subroot)
-            self.isSubtree(root.right, subroot)
+            return (self.isSubtree(root.left, subroot) or
+                    self.isSubtree(root.right, subroot))
         
     def isSametree(self, s, t): #compares if s and t are the same 
         if not s and not t:
@@ -32,5 +32,4 @@ class Solution(object):
                     self.isSametree(s.right, t.right))
         
         return False
-    
     
