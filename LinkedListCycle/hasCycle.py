@@ -13,7 +13,7 @@ class Solution(object):
         #assume nodes aren't repeated.
         #create "visited set"
         if head == None:
-            return True
+            return False
         
         visited = set()
         while head is not None:
