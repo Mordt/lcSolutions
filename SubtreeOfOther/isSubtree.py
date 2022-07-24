@@ -14,14 +14,14 @@ class Solution(object):
         #iterate recursively
         #use helper function to compare if subtrees are the same
         
-        if not subroot: return True 
+        if not subRoot: return True 
         if not root: return False
         
-        if self.isSametree(root, subroot):
+        if self.isSametree(root, subRoot):
             return True
         else:
-            return (self.isSubtree(root.left, subroot) or
-                    self.isSubtree(root.right, subroot))
+            return (self.isSubtree(root.left, subRoot) or
+                    self.isSubtree(root.right, subRoot))
         
     def isSametree(self, s, t): #compares if s and t are the same 
         if not s and not t:
@@ -32,4 +32,5 @@ class Solution(object):
                     self.isSametree(s.right, t.right))
         
         return False
-    
+
+
