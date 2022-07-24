@@ -23,6 +23,7 @@ class Solution(object):
                 #add to visited
                 visited.add(head)
                 head = head.next
+        
         #only here if reach end of list and not cycle
         return False # not a cycle
 
