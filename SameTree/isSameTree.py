@@ -11,8 +11,14 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        #solve recursively checking values at each step
-        if not s and not t:
-            return True #both empty and identical
+        #iterate recursively comparing vals
+        if not p and not q:
+            return True #both empty, hence identical
+        
+        if p and q and p.val == q.val:
+            self.isSameTree(p.left, q.left)
+            self.isSameTree(p.right, q.right)
+        
+        return false #condition failed at some point, not identical
 
-        if s and t and s.val == t.val: 
+
