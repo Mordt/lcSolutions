@@ -14,17 +14,23 @@ class Solution(object):
         #iterate recursively
         #use helper function to compare if subtrees are the same
         
-        if not subroot:#edge case where subtree is empty
-            return True 
+        if not subroot: return True 
+        if not root: return False
         
+        if self.isSametree(root, subroot):
+            return True
+        else:
+            self.isSubtree(root.left, subroot)
+            self.isSubtree(root.right, subroot)
         
-    def isSameTree(self, s, t): #compares if s and t are the same 
+    def isSametree(self, s, t): #compares if s and t are the same 
         if not s and not t:
             return True
         
         if s and t and s.val == t.val:
-            return (self.isSameTree(s.left, t.left) and 
-                    self.isSameTree(s.right, t.right))
+            return (self.isSametree(s.left, t.left) and 
+                    self.isSametree(s.right, t.right))
         
         return False
-
+    
+    
