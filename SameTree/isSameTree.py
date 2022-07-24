@@ -19,5 +19,5 @@ class Solution(object):
             return (self.isSameTree(p.left, q.left) and
                     self.isSameTree(p.right, q.right))
         
-        return false #condition failed at some point, not identical
+        return False #condition failed at some point, not identical
     
