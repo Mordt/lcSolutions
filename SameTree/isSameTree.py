@@ -16,9 +16,8 @@ class Solution(object):
             return True #both empty, hence identical
         
         if p and q and p.val == q.val:
-            self.isSameTree(p.left, q.left)
-            self.isSameTree(p.right, q.right)
+            return (self.isSameTree(p.left, q.left) and
+                    self.isSameTree(p.right, q.right))
         
         return false #condition failed at some point, not identical
-
-
+    
