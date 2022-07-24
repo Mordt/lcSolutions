@@ -15,7 +15,7 @@ class Solution(object):
         if head == None:
             return True
         
-        visited = {}
+        visited = set()
         while head is not None:
             if head in visited:
                 return True #cycle discovered
