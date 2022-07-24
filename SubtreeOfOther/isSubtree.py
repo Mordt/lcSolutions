@@ -11,4 +11,16 @@ class Solution(object):
         :type subRoot: TreeNode
         :rtype: bool
         """
+        #iterate recursively
+        #use helper function to compare if subtrees are the same
         
+    def isSameTree(self, s, t): #compares if s and t are the same 
+        if not s and not t:
+            return True
+        
+        if s and t and s.val == t.val:
+            return (self.isSameTree(s.left, t.left) and 
+                    self.isSameTree(s.right, t.right))
+        
+        return False
+
