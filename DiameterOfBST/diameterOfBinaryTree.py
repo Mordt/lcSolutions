@@ -10,4 +10,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+        #possible level order traversal
+        #depth of left + depth of right
+        #use max value that's updated as u go
         
