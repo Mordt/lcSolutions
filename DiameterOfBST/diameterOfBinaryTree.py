@@ -14,4 +14,8 @@ class Solution(object):
         #use max variable
         #keep track of height as well
         
-        
+        res = [0]
+        def dfs(root):
+            if not root:
+                return -1
+
