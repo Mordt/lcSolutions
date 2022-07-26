@@ -14,3 +14,14 @@ class Solution(object):
         #depth of left + depth of right
         #use max value that's updated as u go
         
+        if root == None:
+            return 0
+        
+        queue = []
+        curr = root
+        queue.append(curr)
+        
+        while True:
+            curr = queue.pop(0)
+        
+        
