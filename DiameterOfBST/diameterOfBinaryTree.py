@@ -11,4 +11,7 @@ class Solution(object):
         :rtype: int
         """
         #doesn't need to go through root
+        #use max variable
+        #keep track of height as well
+        
         
