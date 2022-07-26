@@ -10,18 +10,5 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        #possible level order traversal
-        #depth of left + depth of right
-        #left right root, so postorder.
-        #use max value that's updated as u go
+        #doesn't need to go through root
         
-        if root == None:
-            return 0
-        
-        #postorder recursive
-        return 1 + self.diameterOfBinaryTree(root.left) + 
-               self.diameterOfBinaryTree(root.right) 
-
-
-
-
