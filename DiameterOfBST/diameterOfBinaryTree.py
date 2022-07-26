@@ -12,16 +12,16 @@ class Solution(object):
         """
         #possible level order traversal
         #depth of left + depth of right
-        #left right root, so postorder?
+        #left right root, so postorder.
         #use max value that's updated as u go
         
         if root == None:
             return 0
         
-        queue = []
-        curr = root
-        queue.append(curr)
-        
-        while True:
-            curr = queue.pop(0)
-        
+        #postorder recursive
+        return 1 + self.diameterOfBinaryTree(root.left) + 
+               self.diameterOfBinaryTree(root.right) 
+
+
+
+
