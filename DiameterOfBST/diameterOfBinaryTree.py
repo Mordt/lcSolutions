@@ -12,6 +12,7 @@ class Solution(object):
         """
         #possible level order traversal
         #depth of left + depth of right
+        #left right root, so postorder?
         #use max value that's updated as u go
         
         if root == None:
@@ -23,5 +24,4 @@ class Solution(object):
         
         while True:
             curr = queue.pop(0)
-        
         
