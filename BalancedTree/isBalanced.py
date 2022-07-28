@@ -10,4 +10,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        #tree is balanced if left and right subtrees differ in height by no more than 1
+        #can do this by iterating through nodes, making a map of node->height
+        #at end check if difference in height is > 1
         
