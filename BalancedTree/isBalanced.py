@@ -10,22 +10,21 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        #tree is balanced if left and right subtrees differ in height by no more than 1
-        #can do this by iterating through nodes, making a map of node->height
-        #at end check if difference in height is > 1
-        #or recursively count height in subtrees
-        #add function to calculate heights
-        # is balanced if height.left is < height.right
-        
+
         if root is None: return False #first edge case
 
         leftHeight = self.treeheight(root.left)
         rightHeight = self.treeHeight(root.right)
         
-        if treeHeight -
+        if abs((leftHeight-rightHeight) <= 1) and 
+            isBalanced(root.left) is True and
+            isBalanced(root.right) is True:
+                return True
         
+        return False
+
         def treeHeight(self, root):
             if root is None: return 0
             return 1 + max(self.treeHeight(root.left), self.treeHeight(root.right))
-
-
+        
+        
