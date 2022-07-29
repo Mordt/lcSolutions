@@ -5,6 +5,10 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
+    def treeHeight(self, root):
+        if root is None: return 0
+        return 1 + max(self.treeHeight(root.left), self.treeHeight(root.right))
+    
     def isBalanced(self, root):
         """
         :type root: TreeNode
@@ -16,15 +20,9 @@ class Solution(object):
         leftHeight = self.treeheight(root.left)
         rightHeight = self.treeHeight(root.right)
         
-        if abs((leftHeight-rightHeight) <= 1) and 
-            isBalanced(root.left) is True and
-            isBalanced(root.right) is True:
-                return True
+        difference = leftHeight - rightHeight
+        if abs(difference) <= 1 and isBalanced(root.left) is True and isBalanced(root.right) is True:
+            return True
         
         return False
-
-        def treeHeight(self, root):
-            if root is None: return 0
-            return 1 + max(self.treeHeight(root.left), self.treeHeight(root.right))
-        
-        
+     
