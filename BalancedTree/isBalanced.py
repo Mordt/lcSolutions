@@ -14,11 +14,18 @@ class Solution(object):
         #can do this by iterating through nodes, making a map of node->height
         #at end check if difference in height is > 1
         #or recursively count height in subtrees
+        #add function to calculate heights
+        # is balanced if height.left is < height.right
         
         if root is None: return False #first edge case
+
+        leftHeight = self.treeheight(root.left)
+        rightHeight = self.treeHeight(root.right)
         
-        queue = []
-        curr = root
-        queue.append(curr)
+        if treeHeight -
+        
+        def treeHeight(self, root):
+            if root is None: return 0
+            return 1 + max(self.treeHeight(root.left), self.treeHeight(root.right))
 
 
