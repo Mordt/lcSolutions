@@ -17,12 +17,12 @@ class Solution(object):
 
         if root is None: return False #first edge case
 
-        leftHeight = self.treeheight(root.left)
+        leftHeight = self.treeHeight(root.left)
         rightHeight = self.treeHeight(root.right)
         
         difference = leftHeight - rightHeight
-        if abs(difference) <= 1 and isBalanced(root.left) is True and isBalanced(root.right) is True:
+        if abs(difference) <= 1 and self.isBalanced(root.left) is True and self.isBalanced(root.right) is True:
             return True
         
         return False
-     
+
