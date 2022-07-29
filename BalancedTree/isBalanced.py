@@ -15,7 +15,7 @@ class Solution(object):
         :rtype: bool
         """
 
-        if root is None: return False #first edge case
+        if root is None: return True #first edge case
 
         lh = self.treeHeight(root.left)
         rh = self.treeHeight(root.right)
@@ -24,5 +24,4 @@ class Solution(object):
             return True
         
         return False
-
 
