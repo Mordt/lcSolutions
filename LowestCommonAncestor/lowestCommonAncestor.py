@@ -15,7 +15,19 @@ class Solution(object):
         """
         #defined as lowest node T that has both P and Q as descendants
         #nodes can be descendants of themselves
+        #another key idea: find p and q initially by using sorted property of BST
+        #if both in right/left subtree, change to there
+        #if one in right and the other in left, lowest common ancestor is probably root
+
         if root is None:
             return None
         if p == q:
             return p  # or q it doesn't matter
+
+        if p.val > root.val and q.val > root.val:
+            self.lowestCommonAncestor(root.right, p, q)
+        elif p.val < root.val and q.val < root.val:
+            self.lowestCommonAncestor(root.left, p, q)
+
+        else:  # neither unequivocally in left or right subtree, must be in diff subtrees
+            return root
