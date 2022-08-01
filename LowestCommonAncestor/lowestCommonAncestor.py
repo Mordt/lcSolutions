@@ -13,4 +13,9 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        
+        #defined as lowest node T that has both P and Q as descendants
+        #nodes can be descendants of themselves
+        if root is None:
+            return None
+        if p == q:
+            return p  # or q it doesn't matter
