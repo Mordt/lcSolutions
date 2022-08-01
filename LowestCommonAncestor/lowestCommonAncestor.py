@@ -23,9 +23,9 @@ class Solution(object):
             return None
 
         if p.val > root.val and q.val > root.val:
-            self.lowestCommonAncestor(root.right, p, q)
+            return self.lowestCommonAncestor(root.right, p, q)
         elif p.val < root.val and q.val < root.val:
-            self.lowestCommonAncestor(root.left, p, q)
+            return self.lowestCommonAncestor(root.left, p, q)
 
         else:  # neither unequivocally in left or right subtree, must be in diff subtrees
             return root
