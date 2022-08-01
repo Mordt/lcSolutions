@@ -21,8 +21,6 @@ class Solution(object):
 
         if root is None:
             return None
-        if p == q:
-            return p  # or q it doesn't matter
 
         if p.val > root.val and q.val > root.val:
             self.lowestCommonAncestor(root.right, p, q)
