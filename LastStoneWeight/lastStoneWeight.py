@@ -24,6 +24,8 @@ class Solution(object):
         else:
             return stones[0]
 
+#neetcode solution below:
+
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
         stones = [-s for s in stones]
