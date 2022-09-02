@@ -19,5 +19,8 @@ class Solution(object):
                 y -= x
                 stones.insert(0, y)
         
-        return stones[0]
-    
+        if not stones:
+            return 0
+        else:
+            return stones[0]
+        
