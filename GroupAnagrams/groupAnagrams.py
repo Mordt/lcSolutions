@@ -4,6 +4,10 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
+        
+
+
+    def isAnagram(s, t):
         if len(s) != len(t):
             return False
 
