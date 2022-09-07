@@ -18,6 +18,8 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
+        #note: sort and compare might not be too bad
+
         #strategy is to compare whether anagrams are valid, if so, group
         #by calling is anagram
         for x in strs:
