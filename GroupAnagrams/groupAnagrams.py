@@ -1,12 +1,4 @@
 class Solution(object):
-    def groupAnagrams(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: List[List[str]]
-        """
-        
-
-
     def isAnagram(s, t):
         if len(s) != len(t):
             return False
@@ -20,3 +12,15 @@ class Solution(object):
             if countS[c] != countT.get(c, 0):
                 return False
         return True
+
+    def groupAnagrams(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        #strategy is to compare whether anagrams are valid, if so, group
+        #by calling is anagram
+        for x in strs:
+            for y in strs:
+                #for x, i in enumerate(strs):
+                #    print(x, i)
