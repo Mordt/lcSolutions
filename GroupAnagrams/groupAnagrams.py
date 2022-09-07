@@ -18,3 +18,5 @@ class Solution(object):
                 count[ord(c) - ord("a")] += 1
 
             result[tuple(count)].append(s)
+
+        return result.values()
