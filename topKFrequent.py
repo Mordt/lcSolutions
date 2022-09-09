@@ -16,6 +16,11 @@ class Solution(object):
                 freq[n] = 1
             else:
                 freq[n] += 1
-                
-        print(freq)
-
+        
+        #turn dict into list of tuples
+        for key, value in freq:
+            freqTuple = (key, value)
+            
+        print(freqTuple)
+        #
+            
