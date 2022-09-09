@@ -18,11 +18,24 @@ class Solution(object):
                 freq[n] += 1
         
         #turn dict into list of tuples
-        result = []
+        tuples = []
         for key in freq:
             freqTuple = (key, freq[key])
-            result.append(freqTuple)
+            tuples.append(freqTuple)
             
-        print(result)
+        #sort tuples
+        tuples,
+        key = lambda t: t[1]
         
-            
+        #return
+        result = []
+        for item in tuples:
+            if k > 0:
+                result.append(item[0])
+                k -=1
+            break
+        
+        print(result)
+        return result
+
+
