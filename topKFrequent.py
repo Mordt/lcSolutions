@@ -22,20 +22,22 @@ class Solution(object):
         for key in freq:
             freqTuple = (key, freq[key])
             tuples.append(freqTuple)
-            
+        
         #sort tuples
-        tuples,
-        key = lambda t: t[1]
+        tuples = sorted(
+            tuples,
+            key = lambda t: t[1], 
+            reverse = True
+        )
         
         #return
         result = []
         for item in tuples:
             if k > 0:
-                print(k)
                 result.append(item[0])
-                k -=1
+                k -= 1
                 continue
             break
         
         return result
-
+         
