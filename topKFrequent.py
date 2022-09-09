@@ -31,11 +31,11 @@ class Solution(object):
         result = []
         for item in tuples:
             if k > 0:
+                print(k)
                 result.append(item[0])
                 k -=1
+                continue
             break
         
-        print(result)
         return result
-
 
