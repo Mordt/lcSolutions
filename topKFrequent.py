@@ -18,9 +18,11 @@ class Solution(object):
                 freq[n] += 1
         
         #turn dict into list of tuples
-        for key, value in freq:
-            freqTuple = (key, value)
+        result = []
+        for key in freq:
+            freqTuple = (key, freq[key])
+            result.append(freqTuple)
             
-        print(freqTuple)
-        #
+        print(result)
+        
             
