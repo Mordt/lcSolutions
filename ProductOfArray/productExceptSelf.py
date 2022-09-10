@@ -15,4 +15,8 @@ class Solution(object):
         for n in nums:
             prodSans[n] = product/n
 
-        print(prodSans)
+        result = []
+        for key in prodSans:
+            result.append(prodSans[key])
+
+        return result
