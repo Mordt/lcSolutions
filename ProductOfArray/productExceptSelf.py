@@ -11,4 +11,8 @@ class Solution(object):
         for n in nums:
             product = product * n
 
-        print product
+        prodSans = {}
+        for n in nums:
+            prodSans[n] = product/n
+
+        print(prodSans)
