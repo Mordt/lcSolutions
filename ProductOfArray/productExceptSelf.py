@@ -4,19 +4,17 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        #idea: go through nums,
-        #create map of self -> product without self
+        #without division, will need to multiply product of values before with
+        #product of values after
+        #will need to create prefix array
+        #create postfix array from prefix array
+        
+        pre = [1] * len(nums)
+        post = [1] * len(nums)
+        
+        for n, i in enumerate(nums):
+            pre[i] = pre[i] * n
+            
+        print(pre)
 
-        product = 1
-        for n in nums:
-            product = product * n
 
-        prodSans = {}
-        for n in nums:
-            prodSans[n] = product/n
-
-        result = []
-        for key in prodSans:
-            result.append(prodSans[key])
-
-        return result
