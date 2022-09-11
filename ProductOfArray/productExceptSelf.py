@@ -9,15 +9,24 @@ class Solution(object):
         #will need to create prefix array
         #create postfix array from prefix array
         
-        pre = [1] * (len(nums))
-        post = [1] * (len(nums))
+        prefix = [1] * (len(nums))
+        postfix = [1] * (len(nums))
         
         i = 0
+        pre = 1
         for n in nums:
-            #pre[i] = pre[i] * n
-            print(i)
+            pre = pre * n
+            prefix[i] = pre
             i += 1
+        
+        i = len(postfix)
+        i -= 1
+        post = 1
+        for n in reversed(nums):
+            post = post * n
+            postfix[i] = post
+            i -= 1
             
-        #print(pre)
-
+        print(prefix)
+        print(postfix)
 
