@@ -1,3 +1,37 @@
+#final solution without extra memory:
+class Solution(object):
+    def productExceptSelf(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+
+        result = [1] * (len(nums))
+        postfix = [1] * (len(nums))
+
+        i = 0
+        pre = 1
+        for n in nums:
+            result[i] = pre
+            pre = pre * n
+
+            i += 1
+
+        i = len(postfix)
+        i -= 1
+        post = 1
+        for n in reversed(nums):
+            res = result[i] * post
+            result[i] = res
+            post = post * n
+
+            i -= 1
+
+        print(result)
+        return result
+
+
+#solution with 2 extra arrays:
 class Solution(object):
     def productExceptSelf(self, nums):
         """
@@ -48,9 +82,7 @@ class Solution(object):
 
         return result
 
-#my earlier solution:
-
-
+#my earlier solution with division:
 class Solution(object):
     def productExceptSelf(self, nums):
         """
