@@ -8,17 +8,18 @@ class Solution(object):
         #product of values after
         #will need to create prefix array
         #create postfix array from prefix array
-        
+
         prefix = [1] * (len(nums))
         postfix = [1] * (len(nums))
-        
+        result = [1] * (len(nums))
+
         i = 0
         pre = 1
         for n in nums:
             pre = pre * n
             prefix[i] = pre
             i += 1
-        
+
         i = len(postfix)
         i -= 1
         post = 1
@@ -26,9 +27,25 @@ class Solution(object):
             post = post * n
             postfix[i] = post
             i -= 1
-            
+
         print(prefix)
         print(postfix)
+        # have created both prefix and postfix, now create result which is product of all prev
+        # * product of all post
+
+        pre = 1
+        post = 1
+        i = 0
+        for n in nums:
+            j = i + 1
+            if j < len(nums):
+                result[i] = pre * postfix[j]
+            else:  # final element
+                j = i - 1
+                result[i] = post * prefix[j]
+            i += 1
+
+        print(result)
 
 #my earlier solution:
 
