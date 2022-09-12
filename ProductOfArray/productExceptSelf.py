@@ -28,9 +28,8 @@ class Solution(object):
             postfix[i] = post
             i -= 1
 
-        print(prefix)
-        print(postfix)
-        # have created both prefix and postfix, now create result which is product of all prev
+        # have created both prefix and postfix,
+        #now create result which is product of all prev
         # * product of all post
 
         pre = 1
@@ -45,7 +44,7 @@ class Solution(object):
                 result[i] = post * prefix[j]
             i += 1
 
-        print(result)
+        return result
 
 #my earlier solution:
 
