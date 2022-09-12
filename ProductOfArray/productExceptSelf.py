@@ -27,7 +27,6 @@ class Solution(object):
 
             i -= 1
 
-        print(result)
         return result
 
 
