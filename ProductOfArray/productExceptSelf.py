@@ -39,9 +39,11 @@ class Solution(object):
             j = i + 1
             if j < len(nums):
                 result[i] = pre * postfix[j]
+                pre = prefix[i]
             else:  # final element
                 j = i - 1
                 result[i] = post * prefix[j]
+
             i += 1
 
         return result
