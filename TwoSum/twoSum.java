@@ -12,7 +12,7 @@ class Solution {
             
             if(map.containsKey(nums[i] - target)){
                 result[0] = i;
-                result[1] = map[nums[i]];
+                result[1] = map.get(nums[i] - target);
                 break;
             } else {
                 map.put(nums[i], i);
