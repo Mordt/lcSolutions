@@ -10,6 +10,7 @@ class Solution {
             System.out.println(nums[i]);
             
         }
-        
+        int[] result = new int[2];
+        return result
     }
 }
