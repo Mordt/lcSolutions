@@ -6,11 +6,20 @@ class Solution {
         
         //making hashmap
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int[] result = new int[2];
+        
         for(int i = 0; i < nums.length; i++){
-            System.out.println(nums[i]);
+            
+            if(map.containsKey(nums[i] - target)){
+                result[0] = i;
+                result[1] = map[]
+                    
+            } else {
+                map.put(nums[i], i)
+            }
             
         }
-        int[] result = new int[2];
-        return result
+        
+        return result;
     }
 }
