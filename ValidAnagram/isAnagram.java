@@ -1,13 +1,10 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
         //approach is to sort both, if the same, return true
-        String[] sArray = new String[]{s};
-        String[] tArray = new String[]{t};
+        char[] sArray = s.toCharArray();
+        char[] tArray = t.toCharArray();
         
-        String[] sPrime = Arrays.sort(sArray);
-        String[] tPrime = Arrays.sort(tArray);
-        
-        if(sPrime == tPrime){
+        if(Arrays.sort(sArray) == Arrays.sort(tArray)){
             return true;
         } else {
             return false;
