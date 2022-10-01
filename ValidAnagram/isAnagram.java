@@ -4,7 +4,10 @@ class Solution {
         char[] sArray = s.toCharArray();
         char[] tArray = t.toCharArray();
         
-        if(Arrays.sort(sArray) == Arrays.sort(tArray)){
+        Arrays.sort(sArray);
+        Arrays.sort(tArray);
+        
+        if(sArray == tArray){
             return true;
         } else {
             return false;
