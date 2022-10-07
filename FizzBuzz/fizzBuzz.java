@@ -3,13 +3,13 @@ class Solution {
         
         List<String> result = new List<String>();
         if(n % 3 == 0 && n% 5 == 0){
-            //do stuff
+            result = "FizzBuzz";
         } else if(n % 3 == 0){
-            //sf
+            result = "Fizz";
         } else if(n % 5 == 0){
-            //
+            result = "Buzz";
         } else {
-            result = n.string();
+            result = n.toString();
         }
         return result;
     }
