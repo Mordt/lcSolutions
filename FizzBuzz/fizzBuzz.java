@@ -1,7 +1,7 @@
 class Solution {
     public List<String> fizzBuzz(int n) {
         
-        List<String> result = new List<String>();
+        List<String> result = new ArrayList<String>();
         if(n % 3 == 0 && n% 5 == 0){
             result[n] = "FizzBuzz";
         } else if(n % 3 == 0){
