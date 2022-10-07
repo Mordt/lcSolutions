@@ -1,9 +1,9 @@
 class Solution {
     public List<String> fizzBuzz(int n) {
         
-        List<String> result = new ArrayList<String>();
+        List<String> result = new ArrayList();
         
-        for(i = 1; i <= n; i++){
+        for(int i = 1; i <= n; i++){
             if(i % 3 == 0 && i % 5 == 0){
                 result.set(i, "FizzBuzz");
             } else if(i % 3 == 0){
@@ -11,7 +11,8 @@ class Solution {
             } else if(i % 5 == 0){
                 result.set(i, "Buzz");
             } else {
-                result.set(i, n.toString());
+                Integer number = new Integer(n);
+                result.set(i, number.toString());
             }
         }
         return result;
